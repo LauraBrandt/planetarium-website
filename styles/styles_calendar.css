@@ -1,0 +1,65 @@
+#cal-nav {
+	margin: 20px auto;
+	text-align: center;
+	font-size: 12px;
+}
+
+#content ul {
+	margin-bottom: 2px;
+	padding: 0;
+}
+
+#content ul li {
+	display:inline-block;
+	border-left: 1px solid #1d3595;
+	padding:0 0.5em 0 0.7em;
+	margin-bottom:0.3em;
+	}
+	
+#content ul li:first-child {
+	border-left:0;
+}	
+
+#content table {
+	text-align: center;
+	margin: auto;
+	font-size: 14px;
+	color: #111;
+}
+
+#content thead {
+	cursor: pointer;
+}
+
+#content th {
+	text-align: center;
+	background-color:#D0E0EE;
+	border: 1px solid #888;
+	font-size: 17px;
+	font-family: Muli, Helvetica, sans-serif;
+	color: #111;
+}
+
+#content th * {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	margin-left: -20px;
+}
+
+#content .fa {
+	color: #555;
+	float: left;
+	font-size: 26px;
+	width: 15px;
+	margin-left: 5px;
+}
+
+#content td:first-child {
+	width: 150px;
+	line-height: 125%;
+}
+
+#content td:last-child {
+	vertical-align: middle;
+}
