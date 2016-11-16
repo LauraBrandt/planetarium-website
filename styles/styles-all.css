@@ -53,7 +53,6 @@ img[alt="Public Schools of Robeson County Logo"] {
 
 #search {
 	position: relative;
-	height: 50px;
 	top: -20px;
 	left: 710px;
 }
@@ -63,6 +62,7 @@ img[alt="Public Schools of Robeson County Logo"] {
 	border-radius: 0;
 	border-left: none;
 	box-shadow: none;
+	height: 34px;
 }
 
 #search-input {
@@ -70,6 +70,7 @@ img[alt="Public Schools of Robeson County Logo"] {
 	border-right: none;
 	box-shadow: none;
 	width: 210px;
+	height: 34px;
 }
 
 #search-input:focus{
@@ -104,6 +105,8 @@ img[alt="Public Schools of Robeson County Logo"] {
 	color: #1D3595;
 	text-shadow: 1px 1px #bbb;
 	font-weight: bold;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 #navbar .current {
