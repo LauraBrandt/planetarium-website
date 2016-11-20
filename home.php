@@ -6,7 +6,7 @@
 	<title>Robeson Planetarium</title>
 	<?php include('included/head.php'); ?>
 	<link type="text/css" rel="stylesheet" href="styles/styles_home.css"/>
-	<!-- <script src="scripts/slideshow.js" type='text/javascript'></script>  -->
+	<script src="scripts/slideshow.js" type='text/javascript'></script>
 </head>
 
 <body>
