@@ -1,0 +1,28 @@
+#navbar {
+	text-align: center;
+	font: 1.2em $muli_fontstack;
+	background-color: $dark_blue;
+	margin-bottom: 0;
+	min-height: 2em;
+	ul {
+		width: 100%;
+		li {
+			a {
+				padding: 0.7em 1.8em;
+				color: #eee;
+				font-weight: 600;
+			}
+		}
+		li:hover {
+			a:hover {
+				color: #fff;
+				text-decoration: underline;
+			}
+		}
+		.current {
+			background-color: #ddd;	
+			color: $dark_blue;
+			font-weight: 800;
+		}
+	}
+}

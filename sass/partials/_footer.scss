@@ -1,0 +1,28 @@
+#footer {
+	clear: both;
+	background-color: $dark_blue;
+	font: 1.5rem $roboto_fontstack;
+	text-align: center;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	margin: 0;
+	padding: 2% 2% 1.5% 2%;
+	ul {
+		list-style: none;
+		li {
+			display: inline;
+			border-left: 1px solid #fff;
+			padding: 0 1em 0 1.2em;
+			a {
+				color: #fff;
+			}
+		}
+		li.first {
+			border-left: none;
+		}
+	}
+	p {
+		padding-top: 0.5em;
+		color: $yellow_text;
+	}
+} 

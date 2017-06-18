@@ -1,0 +1,147 @@
+.col {
+  display: inline-block;
+  vertical-align: middle;
+  float: none; }
+  .col #logo {
+    margin: 3% auto 3% auto; }
+  .col #psrclogo {
+    margin: auto;
+    position: relative;
+    left: -15%; }
+
+@media screen and (max-width: 768px) {
+  .col {
+    display: block; }
+  #psrclogo {
+    max-width: 30%; } }
+
+#navbar {
+  text-align: center;
+  font: 1.2em Muli, Helvetica, sans-serif;
+  background-color: #1D3595;
+  margin-bottom: 0;
+  min-height: 2em; }
+  #navbar ul {
+    width: 100%; }
+    #navbar ul li a {
+      padding: 0.7em 1.8em;
+      color: #eee;
+      font-weight: 600; }
+    #navbar ul li:hover a:hover {
+      color: #fff;
+      text-decoration: underline; }
+    #navbar ul .current {
+      background-color: #ddd;
+      color: #1D3595;
+      font-weight: 800; }
+
+#sidebar {
+  width: 22%;
+  float: right;
+  font-family: Roboto, Helvetica, sans-serif;
+  color: #000;
+  background-color: #7BABD1;
+  position: relative;
+  height: 100%; }
+  #sidebar a {
+    color: #1D3595; }
+
+.large {
+  font-size: 15px;
+  font-family: Lato, Helvetica, sans-serif; }
+
+.center {
+  text-align: center; }
+
+.left {
+  padding: 0 25px 0 20px;
+  margin: 0; }
+
+#sidebar #address {
+  padding-top: 40px;
+  padding-bottom: 5px; }
+
+#sidebar #contact {
+  padding-top: 15px;
+  padding-bottom: 35px;
+  font-size: 14px; }
+
+#sidebar img {
+  margin-bottom: 15px; }
+
+#sidebar #clearsky1 {
+  margin: 30px 0 25px 0;
+  font-size: 14px; }
+
+#sidebar h6 {
+  font-weight: bold;
+  font-size: 13px; }
+
+#sidebar #clearsky2 {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  font-size: 13px; }
+
+#content {
+  width: 78%;
+  float: left;
+  padding: 2% 6% 5% 6%; }
+  #content h1 {
+    color: #12215e;
+    font-family: Lato, Helvetica, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.8rem; }
+  #content h2, #content h3 {
+    color: #12215e;
+    font-weight: bold;
+    margin: 3% 0 1.5%;
+    font-family: Muli, Helvetica, sans-serif;
+    font-size: 2.5rem; }
+  #content h3 {
+    font-family: Lato, Helvetica, sans-serif;
+    font-size: 1.8rem; }
+
+#footer {
+  clear: both;
+  background-color: #1D3595;
+  font: 1.5rem Roboto, Helvetica, sans-serif;
+  text-align: center;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  margin: 0;
+  padding: 2% 2% 1.5% 2%; }
+  #footer ul {
+    list-style: none; }
+    #footer ul li {
+      display: inline;
+      border-left: 1px solid #fff;
+      padding: 0 1em 0 1.2em; }
+      #footer ul li a {
+        color: #fff; }
+    #footer ul li.first {
+      border-left: none; }
+  #footer p {
+    padding-top: 0.5em;
+    color: #FFD80E; }
+
+body {
+  background: #333 url("../images/spaceswirldoubled.jpg") repeat-y;
+  background-size: 100%;
+  overflow-x: hidden;
+  font-family: "Roboto Slab", "Times New Roman", serif; }
+
+.container {
+  background: #ffffff;
+  width: 75%;
+  margin: 1% auto 1% auto;
+  padding: 0; }
+
+.clear {
+  clear: both; }
+
+@media screen and (max-width: 1100px) {
+  body {
+    background: none; }
+  .container {
+    width: 100%; } }

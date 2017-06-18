@@ -1,0 +1,22 @@
+.col {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+  #logo {
+    margin: 3% auto 3% auto;
+  }
+  #psrclogo {
+    margin: auto;
+    position:relative;
+    left:-15%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+	.col {
+	  display: block;
+	}
+	#psrclogo {
+	  max-width: 30%;
+	}
+}

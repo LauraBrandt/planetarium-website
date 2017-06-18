@@ -1,0 +1,42 @@
+$dark_blue: #1D3595;
+$light_blue: #7BABD1;
+$blue_text: darken($dark_blue, 13%);
+$yellow_text: #FFD80E;
+
+$robotoslab_fontstack: "Roboto Slab", "Times New Roman", serif;
+$roboto_fontstack: Roboto, Helvetica, sans-serif;
+$muli_fontstack: Muli, Helvetica, sans-serif;
+$lato_fontstack: Lato, Helvetica, sans-serif;
+
+@import "partials/header";
+@import "partials/navbar";
+@import "partials/sidebar";
+@import "partials/content";
+@import "partials/footer";
+
+body {
+	background: #333 url("../images/spaceswirldoubled.jpg") repeat-y;
+	background-size:100%;
+	overflow-x: hidden;
+	font-family: $robotoslab_fontstack
+}
+
+.container {
+	background: #ffffff;
+	width:75%;
+	margin: 1% auto 1% auto;
+	padding: 0;
+}
+
+.clear { clear: both; }
+
+@media screen and (max-width: 1100px) {
+	body {
+		background: none;
+	}
+
+	.container {
+		width: 100%;
+	}
+}
+
