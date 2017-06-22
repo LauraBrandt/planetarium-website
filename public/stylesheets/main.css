@@ -83,7 +83,8 @@
   font-size: 13px; }
 
 #content {
-  width: 78%;
+  width: 100%;
+  /*78%;*/
   float: left;
   padding: 2% 6% 5% 6%; }
   #content h1 {
@@ -105,25 +106,31 @@
 #footer {
   clear: both;
   background-color: #1D3595;
-  font: 1.5rem Roboto, Helvetica, sans-serif;
+  font: 1.4rem Roboto, Helvetica, sans-serif;
   text-align: center;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
   margin: 0;
-  padding: 2% 2% 1.5% 2%; }
-  #footer ul {
-    list-style: none; }
-    #footer ul li {
-      display: inline;
-      border-left: 1px solid #fff;
-      padding: 0 1em 0 1.2em; }
-      #footer ul li a {
-        color: #fff; }
-    #footer ul li.first {
-      border-left: none; }
+  padding: 1.3% 2% 0.8% 2%;
+  /*
+	ul {
+		list-style: none;
+		li {
+			display: inline;
+			border-left: 1px solid #fff;
+			padding: 0 1em 0 1.2em;
+			a {
+				color: #fff;
+			}
+		}
+		li.first {
+			border-left: none;
+		}
+	}*/ }
   #footer p {
     padding-top: 0.5em;
-    color: #FFD80E; }
+    color: #fff;
+    /*yellow_text;*/ }
 
 body {
   background: #333 url("../images/spaceswirldoubled.jpg") repeat-y;

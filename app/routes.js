@@ -48,11 +48,11 @@ module.exports = function(app) {
             });
     });
     
-    app.get('/about', function (req, res) {
-        res.render('pages/about', 
+    app.get('/contact', function (req, res) {
+        res.render('pages/contact', 
             {
-                title : 'About Us',
-                page: 'about'
+                title : 'Contact',
+                page: 'contact'
             });
     });
     

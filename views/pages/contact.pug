@@ -1,0 +1,39 @@
+extend ../templates/layout
+block content
+	h1 Contact
+	p For reservations and other information, call or email Joy Ivey: 
+		br
+		| (910) 735-2148
+		br
+		a(href='mailto:"Joy%20Ivey"%20<joy.ivey@robeson.k12.nc.us>') joy.ivey@robeson.k12.nc.us
+	p We are located at:
+		br
+		| 420 Caton Road
+		br
+		| Lumberton, NC 28360
+	#directions
+		iframe(width="425" height="350" frameborder="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Robeson+Planetarium,+Caton+Road,+Lumberton,+NC,+United+States&amp;aq=0&amp;oq=Robeson+Planetarium&amp;sll=37.0625,-95.677068&amp;sspn=42.224734,79.013672&amp;ie=UTF8&amp;hq=Robeson+Planetarium,&amp;hnear=Caton+Rd,+Lumberton,+Robeson,+North+Carolina&amp;t=m&amp;ll=34.62671,-79.056973&amp;spn=0.01236,0.018239&amp;z=15&amp;output=embed")
+		p From I-95:
+			br
+			| Take exit 17, turn onto Caton Rd. The planetarium will be about .25 mi to the west. There's a small street with parking in front of it.
+	hr
+	#staff
+		h2 Our Team
+			.person.row
+				.col-sm-3
+					img(src="images/about_page/ken.jpg" alt="Ken Brandt" height="120" width="120" class="profilepic")
+				.col-sm-9
+					h3 Ken Brandt, M. Ed., NBCT
+					h4 Director
+					a(href='mailto:"Ken%20Brandt"%20<kenneth.brandt@robeson.k12.nc.us>') brandtk.psrc@robeson.k12.nc.us
+			.person.row
+				h3 Joy Ivey
+				h4 Secretary
+				a(href='mailto:"Joy%20Ivey"%20<joy.ivey@robeson.k12.nc.us>') joy.ivey@robeson.k12.nc.us
+			.person.row
+				h3 Cleveland Oxendine
+				h4 Driver
+			.person.row
+				h3 Dr. Elizabeth Younce
+				h4 Supervisor, Assistant Superintendent of Curriculum & Instruction
+				p.phone 910-735-2370

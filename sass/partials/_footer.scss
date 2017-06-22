@@ -1,12 +1,13 @@
 #footer {
 	clear: both;
 	background-color: $dark_blue;
-	font: 1.5rem $roboto_fontstack;
+	font: 1.4rem $roboto_fontstack;
 	text-align: center;
 	border-top: 1px solid #000;
 	border-bottom: 1px solid #000;
 	margin: 0;
-	padding: 2% 2% 1.5% 2%;
+	padding: 1.3% 2% 0.8% 2%;
+	/*
 	ul {
 		list-style: none;
 		li {
@@ -20,9 +21,9 @@
 		li.first {
 			border-left: none;
 		}
-	}
+	}*/
 	p {
 		padding-top: 0.5em;
-		color: $yellow_text;
+		color: #fff;/*yellow_text;*/
 	}
 } 

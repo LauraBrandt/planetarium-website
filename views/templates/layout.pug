@@ -41,52 +41,54 @@ html(lang='en')
               li
                 a(href='/sciencecenter' class=page=='sciencecenter' ? 'current' : '') Science Center 
               li
-                a(href='/about' class=page=='about' ? 'current' : '') About Us
+                a(href='/contact' class=page=='contact' ? 'current' : '') Contact
       #middlecontainer
-        #sidebar
-          p.center.large#address 
-            strong Robeson Planetarium 
-            br 
-            | 420 Caton Road
-            br 
-            | Lumberton, NC 28360
-          p.center.large
-            a(href="/directions") Directions and Map
-          p.left#contact For reservations and other information, call or email Joy Ivey: 
-            br
-            | (910) 735-2148
-            br
-            a(href='mailto:"Joy%20Ivey"%20<joy.ivey@robeson.k12.nc.us>') joy.ivey@robeson.k12.nc.us
-          .center
-            a(href="https://www.facebook.com/Robeson-Planetarium-and-Science-Center-256104448069")
-              img(src="/images/facebook-logo.jpg" alt="Facebook button" height="34" width="113")
-          hr
-          p.left#clearsky1 Check out which days will have the best weather for astronomical viewing:
-          h6.center Clear Sky Forecast
-          .center
-            a(href="http://cleardarksky.com/c/RbsnPntNCkey.html")
-              img(src="http://cleardarksky.com/c/RbsnPntNCcs0.gif?1" alt="weather forecast chart" height="10" width="204" title="Each block represents one hour, with days broken up by vertical red lines. White and grey means cloudy; the darker the blue, the clearer it will be.")
-          p.left#clearsky2 Click the image for our detailed astronomer's weather forecast.
-          hr
+        //
+          #sidebar
+            p.center.large#address 
+              strong Robeson Planetarium 
+              br 
+              | 420 Caton Road
+              br 
+              | Lumberton, NC 28360
+            p.center.large
+              a(href="/directions") Directions and Map
+            p.left#contact For reservations and other information, call or email Joy Ivey: 
+              br
+              | (910) 735-2148
+              br
+              a(href='mailto:"Joy%20Ivey"%20<joy.ivey@robeson.k12.nc.us>') joy.ivey@robeson.k12.nc.us
+            .center
+              a(href="https://www.facebook.com/Robeson-Planetarium-and-Science-Center-256104448069")
+                img(src="/images/facebook-logo.jpg" alt="Facebook button" height="34" width="113")
+            hr
+            p.left#clearsky1 Check out which days will have the best weather for astronomical viewing:
+            h6.center Clear Sky Forecast
+            .center
+              a(href="http://cleardarksky.com/c/RbsnPntNCkey.html")
+                img(src="http://cleardarksky.com/c/RbsnPntNCcs0.gif?1" alt="weather forecast chart" height="10" width="204" title="Each block represents one hour, with days broken up by vertical red lines. White and grey means cloudy; the darker the blue, the clearer it will be.")
+            p.left#clearsky2 Click the image for our detailed astronomer's weather forecast.
+            hr
         #content
           block content
         .clear
       #footer
-        ul
-          li.first
-            a(href="/directions") Directions
-          li
-            a(href="/about") About
-          li
-            a(href="/schoolcalendar") Calendar
-          li
-            a(href="/publicshows") Shows
-          li
-            a(href="/resources") Resources
-          li
-            a(href="/sciencecenter") Science Center
-          li
-            a(href="http://www.robeson.k12.nc.us/") Public Schools of Robeson County
+        //
+          ul
+            li.first
+              a(href="/directions") Directions
+            li
+              a(href="/about") About
+            li
+              a(href="/schoolcalendar") Calendar
+            li
+              a(href="/publicshows") Shows
+            li
+              a(href="/resources") Resources
+            li
+              a(href="/sciencecenter") Science Center
+            li
+              a(href="http://www.robeson.k12.nc.us/") Public Schools of Robeson County
         p &copy; 2017 Robeson Planetarium. All rights reserved.
         
         script.
