@@ -1,13 +1,1699 @@
 extend ../templates/layout
 block content
-  p
-    | Vivamus hendrerit arcu sed erat molestie
-    | vehicula. Sed auctor neque eu tellus
-    | rhoncus ut eleifend nibh porttitor. Ut in.
-  p
-    | Donec congue lacinia dui, a porttitor
-    | lectus condimentum laoreet. Nunc eu
-    | ullamcorper orci. Quisque eget odio ac
-    | lectus vestibulum faucibus eget in metus.
-    | In pellentesque faucibus vestibulum. Nulla
-    | at nulla justo, eget luctus tortor.
+  h1 2016-2017 Calendar
+  #cal-nav
+    ul
+      li
+        a(href='#august') August
+      li
+        a(href='#september') September
+      li
+        a(href='#october') October
+      li
+        a(href='#november') November
+      li
+        a(href='#december') December
+      li
+        a(href='#january') January
+    ul
+      li
+        a(href='#february') February
+      li
+        a(href='#march') March
+      li
+        a(href='#april') April
+      li
+        a(href='#may') May
+      li
+        a(href='#june') June
+      li
+        a(href='#june') July
+  script.
+    $(document).ready(function() {
+      // toggle between right and down carets on click
+      $("thead>tr").click(function() {
+      $(this).find(".toggle").toggle();
+      });
+    });
+  table#august.table.table-hover.table-bordered
+    thead
+      tr(data-toggle='collapse', data-target='#augcollapse')
+        th(colspan='2')
+          i.fa.fa-caret-right.toggle(aria-hidden='true', title='expand')
+          i.fa.fa-caret-down.toggle(aria-hidden='true', title='collapse', style='display:none')
+          p August
+    tbody#augcollapse.collapse
+      tr
+        td
+          | Monday
+          br
+          | 8/1
+        td Stuff
+      tr
+        td
+          | Tuesday
+          br
+          | 8/2
+        td Robeson Elementary - Grades 2 and 3
+      tr
+        td
+          | Wednesday
+          br
+          | 8/3
+        td Southside Ashpole Elementary ‒ 4th Grade
+      tr
+        td
+          | Thursday
+          br
+          | 8/4
+        td Piney Grove Elementary ‒ Over run Day
+      tr
+        td
+          | Friday
+          br
+          | 8/5
+        td West Lumberton Elementary ‒ 4th Grade
+      tr
+        td
+          | Monday
+          br
+          | 8/8
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 8/9
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 8/10
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 8/11
+        td
+      tr
+        td
+          | Friday
+          br
+          | 8/12
+        td
+      tr
+        td
+          | Monday
+          br
+          | 8/15
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 8/16
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 8/17
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 8/18
+        td
+      tr
+        td
+          | Friday
+          br
+          | 8/19
+        td
+      tr
+        td
+          | Monday
+          br
+          | 8/22
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 8/23
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 8/24
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 8/25
+        td
+      tr
+        td
+          | Friday
+          br
+          | 8/26
+        td
+      tr
+        td
+          | Monday
+          br
+          | 8/29
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 8/30
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 8/31
+        td
+  table#september.table.table-hover.table-bordered
+    thead
+      tr(data-toggle='collapse', data-target='#sepcollapse')
+        th(colspan='2')
+          i.fa.fa-caret-right.toggle(aria-hidden='true', title='expand')
+          i.fa.fa-caret-down.toggle(aria-hidden='true', title='collapse', style='display:none')
+          p September
+    tbody#sepcollapse.collapse
+      tr
+        td
+          | Thursday
+          br
+          | 9/1
+        td
+      tr
+        td
+          | Friday
+          br
+          | 9/2
+        td
+      tr
+        td
+          | Monday
+          br
+          | 9/5
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 9/6
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 9/7
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 9/8
+        td
+      tr
+        td
+          | Friday
+          br
+          | 9/9
+        td
+      tr
+        td
+          | Monday
+          br
+          | 9/12
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 9/13
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 9/14
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 9/15
+        td
+      tr
+        td
+          | Friday
+          br
+          | 9/16
+        td
+      tr
+        td
+          | Monday
+          br
+          | 9/19
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 9/20
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 9/21
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 9/22
+        td
+      tr
+        td
+          | Friday
+          br
+          | 9/23
+        td
+      tr
+        td
+          | Monday
+          br
+          | 9/26
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 9/27
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 9/28
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 9/29
+        td
+      tr
+        td
+          | Friday
+          br
+          | 9/30
+        td
+  table#october.table.table-hover.table-bordered
+    thead
+      tr(data-toggle='collapse', data-target='#octcollapse')
+        th(colspan='2')
+          i.fa.fa-caret-right.toggle(aria-hidden='true', title='expand')
+          i.fa.fa-caret-down.toggle(aria-hidden='true', title='collapse', style='display:none')
+          p October
+    tbody#octcollapse.collapse
+      tr
+        td
+          | Monday
+          br
+          | 10/3
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 10/4
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 10/5
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 10/6
+        td
+      tr
+        td
+          | Friday
+          br
+          | 10/7
+        td
+      tr
+        td
+          | Monday
+          br
+          | 10/10
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 10/11
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 10/12
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 10/13
+        td
+      tr
+        td
+          | Friday
+          br
+          | 10/14
+        td
+      tr
+        td
+          | Monday
+          br
+          | 10/17
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 10/18
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 10/19
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 10/20
+        td
+      tr
+        td
+          | Friday
+          br
+          | 10/21
+        td
+      tr
+        td
+          | Monday
+          br
+          | 10/24
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 10/25
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 10/26
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 10/27
+        td
+      tr
+        td
+          | Friday
+          br
+          | 10/28
+        td
+      tr
+        td
+          | Monday
+          br
+          | 10/31
+        td
+  table#november.table.table-hover.table-bordered
+    thead
+      tr(data-toggle='collapse', data-target='#novcollapse')
+        th(colspan='2')
+          i.fa.fa-caret-right.toggle(aria-hidden='true', title='expand')
+          i.fa.fa-caret-down.toggle(aria-hidden='true', title='collapse', style='display:none')
+          p November
+    tbody#novcollapse.collapse
+      tr
+        td
+          | Tuesday
+          br
+          | 11/1
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 11/2
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 11/3
+        td
+      tr
+        td
+          | Friday
+          br
+          | 11/4
+        td
+      tr
+        td
+          | Monday
+          br
+          | 11/7
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 11/8
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 11/9
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 11/10
+        td
+      tr
+        td
+          | Friday
+          br
+          | 11/11
+        td
+      tr
+        td
+          | Monday
+          br
+          | 11/14
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 11/15
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 11/16
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 11/17
+        td
+      tr
+        td
+          | Friday
+          br
+          | 11/18
+        td
+      tr
+        td
+          | Monday
+          br
+          | 11/21
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 11/22
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 11/23
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 11/24
+        td
+      tr
+        td
+          | Friday
+          br
+          | 11/25
+        td
+      tr
+        td
+          | Monday
+          br
+          | 11/28
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 11/29
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 11/30
+        td
+  table#december.table.table-hover.table-bordered
+    thead
+      tr(data-toggle='collapse', data-target='#deccollapse')
+        th(colspan='2')
+          i.fa.fa-caret-right.toggle(aria-hidden='true', title='expand')
+          i.fa.fa-caret-down.toggle(aria-hidden='true', title='collapse', style='display:none')
+          p December
+    tbody#deccollapse.collapse
+      tr
+        td
+          | Thursday
+          br
+          | 12/1
+        td
+      tr
+        td
+          | Friday
+          br
+          | 12/2
+        td
+      tr
+        td
+          | Monday
+          br
+          | 12/5
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 12/6
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 12/7
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 12/8
+        td
+      tr
+        td
+          | Friday
+          br
+          | 12/9
+        td
+      tr
+        td
+          | Monday
+          br
+          | 12/12
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 12/13
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 12/14
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 12/15
+        td
+      tr
+        td
+          | Friday
+          br
+          | 12/16
+        td
+      tr
+        td
+          | Monday
+          br
+          | 12/19
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 12/20
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 12/21
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 12/22
+        td
+      tr
+        td
+          | Friday
+          br
+          | 12/23
+        td
+      tr
+        td
+          | Monday
+          br
+          | 12/26
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 12/27
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 12/28
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 12/29
+        td
+      tr
+        td
+          | Friday
+          br
+          | 12/30
+        td
+  table#january.table.table-hover.table-bordered
+    thead
+      tr(data-toggle='collapse', data-target='#jancollapse')
+        th(colspan='2')
+          i.fa.fa-caret-right.toggle(aria-hidden='true', title='expand')
+          i.fa.fa-caret-down.toggle(aria-hidden='true', title='collapse', style='display:none')
+          p January
+    tbody#jancollapse.collapse
+      tr
+        td
+          | Monday
+          br
+          | 1/2
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 1/3
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 1/4
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 1/5
+        td
+      tr
+        td
+          | Friday
+          br
+          | 1/6
+        td
+      tr
+        td
+          | Monday
+          br
+          | 1/9
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 1/10
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 1/11
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 1/12
+        td
+      tr
+        td
+          | Friday
+          br
+          | 1/13
+        td
+      tr
+        td
+          | Monday
+          br
+          | 1/16
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 1/17
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 1/18
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 1/19
+        td
+      tr
+        td
+          | Friday
+          br
+          | 1/20
+        td
+      tr
+        td
+          | Monday
+          br
+          | 1/23
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 1/24
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 1/25
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 1/26
+        td
+      tr
+        td
+          | Friday
+          br
+          | 1/27
+        td
+      tr
+        td
+          | Monday
+          br
+          | 1/30
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 1/31
+        td
+  table#february.table.table-hover.table-bordered
+    thead
+      tr(data-toggle='collapse', data-target='#febcollapse')
+        th(colspan='2')
+          i.fa.fa-caret-right.toggle(aria-hidden='true', title='expand')
+          i.fa.fa-caret-down.toggle(aria-hidden='true', title='collapse', style='display:none')
+          p February
+    tbody#febcollapse.collapse
+      tr
+        td
+          | Wednesday
+          br
+          | 2/1
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 2/2
+        td
+      tr
+        td
+          | Friday
+          br
+          | 2/3
+        td
+      tr
+        td
+          | Monday
+          br
+          | 2/6
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 2/7
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 2/8
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 2/9
+        td
+      tr
+        td
+          | Friday
+          br
+          | 2/10
+        td
+      tr
+        td
+          | Monday
+          br
+          | 2/13
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 2/14
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 2/15
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 2/16
+        td
+      tr
+        td
+          | Friday
+          br
+          | 2/17
+        td
+      tr
+        td
+          | Monday
+          br
+          | 2/20
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 2/21
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 2/22
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 2/23
+        td
+      tr
+        td
+          | Friday
+          br
+          | 2/24
+        td
+      tr
+        td
+          | Monday
+          br
+          | 2/27
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 2/28
+        td
+  table#march.table.table-hover.table-bordered
+    thead
+      tr(data-toggle='collapse', data-target='#marcollapse')
+        th(colspan='2')
+          i.fa.fa-caret-right.toggle(aria-hidden='true', title='expand')
+          i.fa.fa-caret-down.toggle(aria-hidden='true', title='collapse', style='display:none')
+          p March
+    tbody#marcollapse.collapse
+      tr
+        td
+          | Wednesday
+          br
+          | 3/1
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 3/2
+        td
+      tr
+        td
+          | Friday
+          br
+          | 3/3
+        td
+      tr
+        td
+          | Monday
+          br
+          | 3/6
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 3/7
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 3/8
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 3/9
+        td
+      tr
+        td
+          | Friday
+          br
+          | 3/10
+        td
+      tr
+        td
+          | Monday
+          br
+          | 3/13
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 3/14
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 3/15
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 3/16
+        td
+      tr
+        td
+          | Friday
+          br
+          | 3/17
+        td
+      tr
+        td
+          | Monday
+          br
+          | 3/20
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 3/21
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 3/22
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 3/23
+        td
+      tr
+        td
+          | Friday
+          br
+          | 3/24
+        td
+      tr
+        td
+          | Monday
+          br
+          | 3/27
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 3/28
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 3/29
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 3/30
+        td
+      tr
+        td
+          | Friday
+          br
+          | 3/31
+        td
+  table#april.table.table-hover.table-bordered
+    thead
+      tr(data-toggle='collapse', data-target='#aprcollapse')
+        th(colspan='2')
+          i.fa.fa-caret-right.toggle(aria-hidden='true', title='expand')
+          i.fa.fa-caret-down.toggle(aria-hidden='true', title='collapse', style='display:none')
+          p April
+    tbody#aprcollapse.collapse
+      tr
+        td
+          | Monday
+          br
+          | 4/3
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 4/4
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 4/5
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 4/6
+        td
+      tr
+        td
+          | Friday
+          br
+          | 4/7
+        td
+      tr
+        td
+          | Monday
+          br
+          | 4/10
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 4/11
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 4/12
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 4/13
+        td
+      tr
+        td
+          | Friday
+          br
+          | 4/14
+        td
+      tr
+        td
+          | Monday
+          br
+          | 4/17
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 4/18
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 4/19
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 4/20
+        td
+      tr
+        td
+          | Friday
+          br
+          | 4/21
+        td
+      tr
+        td
+          | Monday
+          br
+          | 4/24
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 4/25
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 4/26
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 4/27
+        td
+      tr
+        td
+          | Friday
+          br
+          | 4/28
+        td
+  table#may.table.table-hover.table-bordered
+    thead
+      tr(data-toggle='collapse', data-target='#maycollapse')
+        th(colspan='2')
+          i.fa.fa-caret-right.toggle(aria-hidden='true', title='expand')
+          i.fa.fa-caret-down.toggle(aria-hidden='true', title='collapse', style='display:none')
+          p May
+    tbody#maycollapse.collapse
+      tr
+        td
+          | Monday
+          br
+          | 5/1
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 5/2
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 5/3
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 5/4
+        td
+      tr
+        td
+          | Friday
+          br
+          | 5/5
+        td
+      tr
+        td
+          | Monday
+          br
+          | 5/8
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 5/9
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 5/10
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 5/11
+        td
+      tr
+        td
+          | Friday
+          br
+          | 5/12
+        td
+      tr
+        td
+          | Monday
+          br
+          | 5/15
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 5/16
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 5/17
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 5/18
+        td
+      tr
+        td
+          | Friday
+          br
+          | 5/19
+        td
+      tr
+        td
+          | Monday
+          br
+          | 5/22
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 5/23
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 5/24
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 5/25
+        td
+      tr
+        td
+          | Friday
+          br
+          | 5/26
+        td
+      tr
+        td
+          | Monday
+          br
+          | 5/29
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 5/30
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 5/31
+        td
+  table#june.table.table-hover.table-bordered
+    thead
+      tr(data-toggle='collapse', data-target='#juncollapse')
+        th(colspan='2')
+          i.fa.fa-caret-right.toggle(aria-hidden='true', title='expand')
+          i.fa.fa-caret-down.toggle(aria-hidden='true', title='collapse', style='display:none')
+          p June
+    tbody#juncollapse.collapse
+      tr
+        td
+          | Thursday
+          br
+          | 6/1
+        td
+      tr
+        td
+          | Friday
+          br
+          | 6/2
+        td
+      tr
+        td
+          | Monday
+          br
+          | 6/5
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 6/6
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 6/7
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 6/8
+        td
+      tr
+        td
+          | Friday
+          br
+          | 6/9
+        td
+      tr
+        td
+          | Monday
+          br
+          | 6/12
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 6/13
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 6/14
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 6/15
+        td
+      tr
+        td
+          | Friday
+          br
+          | 6/16
+        td
+      tr
+        td
+          | Monday
+          br
+          | 6/19
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 6/20
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 6/21
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 6/22
+        td
+      tr
+        td
+          | Friday
+          br
+          | 6/23
+        td
+      tr
+        td
+          | Monday
+          br
+          | 6/26
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 6/27
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 6/28
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 6/29
+        td
+      tr
+        td
+          | Friday
+          br
+          | 6/30
+        td
+  table#july.table.table-hover.table-bordered
+    thead
+      tr(data-toggle='collapse', data-target='#julcollapse')
+        th(colspan='2')
+          i.fa.fa-caret-right.toggle(aria-hidden='true', title='expand')
+          i.fa.fa-caret-down.toggle(aria-hidden='true', title='collapse', style='display:none')
+          p July
+    tbody#julcollapse.collapse
+      tr
+        td
+          | Monday
+          br
+          | 7/3
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 7/4
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 7/5
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 7/6
+        td
+      tr
+        td
+          | Friday
+          br
+          | 7/7
+        td
+      tr
+        td
+          | Monday
+          br
+          | 7/10
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 7/11
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 7/12
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 7/13
+        td
+      tr
+        td
+          | Friday
+          br
+          | 7/14
+        td
+      tr
+        td
+          | Monday
+          br
+          | 7/17
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 7/18
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 7/19
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 7/20
+        td
+      tr
+        td
+          | Friday
+          br
+          | 7/21
+        td
+      tr
+        td
+          | Monday
+          br
+          | 7/24
+        td
+      tr
+        td
+          | Tuesday
+          br
+          | 7/25
+        td
+      tr
+        td
+          | Wednesday
+          br
+          | 7/26
+        td
+      tr
+        td
+          | Thursday
+          br
+          | 7/27
+        td
+      tr
+        td
+          | Friday
+          br
+          | 7/28
+        td
+      tr
+        td
+          | Monday
+          br
+          | 7/31
+        td
