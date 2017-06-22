@@ -4,6 +4,12 @@ block content
 	p#intro The planetarium is open to the public for shows on Saturdays. Shows generally run about 1 hour. Seating capacity is 65 people/program.  Groups of ten or more are encouraged to make reservations in advance. For reservations, call 735-2148.
 	h2 Upcoming shows:
 	ul
+		each upcomingShow in upcoming
+			li
+				h4= upcomingShow.title
+				p= upcomingShow.description
+				p.date Date and time: #{upcomingShow.date}
+	//		
 		li
 			h4 Dawn of the Space Age
 			p.aside Note: this program is suitable for those 8+ years old.
@@ -11,6 +17,11 @@ block content
 			p.date Date and time: Saturday, October 15th at 1 pm.
 	h2 Previous shows:
 	ul
+		each previousShow in previous
+			li
+				h4= previousShow.title
+				p= previousShow.description
+	//
 		li
 			h4 Natural Selection
 			p We celebrate two great science thinkers born in February - Galileo and Darwin.

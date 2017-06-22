@@ -1,37 +1,12 @@
 extend ../templates/layout
+block head
+	link(rel='stylesheet', href="/stylesheets/styles_sciencecenter.css")
 block content
 	h1 Science Center
 	p#intro Attached to the planetarium is our science center, where we're always introducing new fun, interactive exhibits that the students can play with while learning cool science at the same time! See what our current exhibits are below.
 	.row#all-exhibits
-		.exhibit.col-sm-6.col-md-4
-			h4 Magnets
-			img(src="images/sciencecenter/magnet.svg")
-			p.description
-		.exhibit.col-sm-6.col-md-4
-			h4 Building Robots
-			img(src="images/sciencecenter/asimo_robot.jpg")
-			p.description
-		.exhibit.col-sm-6.col-md-4
-			h4 Mineral and Rock ID
-			img(src="images/sciencecenter/quartz.jpg")
-			p.description
-		.exhibit.col-sm-6.col-md-4
-			h4 Mechanical to Electrical Energy
-			img(src="images/sciencecenter/bike_bulb-1.jpg")
-			p.description
-		.exhibit.col-sm-6.col-md-4
-			h4 Colors and Light
-			img(src="images/sciencecenter/color.svg")
-			p.description
-		.exhibit.col-sm-6.col-md-4
-			h4 Building Telescopes
-			img(src="images/sciencecenter/telescope.jpg")
-			p.description
-		.exhibit.col-sm-6.col-md-4
-			h4 Rocks and Minerals of Mars
-			img(src="images/sciencecenter/adirondack.jpg")
-			p.description
-		.exhibit.col-sm-6.col-md-4
-			h4 Planetary Globes: Similarities and Differences
-			img(src="images/sciencecenter/globes-1.jpg")
-			p.description
+		each item in exhibits
+			.exhibit.col-sm-6.col-md-4
+				h4= item.title
+				img.img-responsive(src=item.imageLocation)
+				p= item.description

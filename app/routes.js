@@ -1,4 +1,10 @@
-module.exports = function(app) {
+var Exhibits = require('./models/exhibits.js');
+var News = require('./models/news.js');
+var Personnel = require('./models/personnel.js');
+var Resources = require('./models/resources.js');
+var Shows = require('./models/shows.js');
+
+module.exports = function(app, db) {
     
     app.get('/', function (req, res) {
         res.render('pages/home', 
@@ -25,11 +31,25 @@ module.exports = function(app) {
     });
     
     app.get('/publicshows', function (req, res) {
+        Shows.find({status: 'upcoming'}).sort('order').exec(function(err, upcomingShows) {
+            if (err) console.log(err);
+            Shows.find({status: 'previous'}).sort('order').exec(function(err, previousShows) {
+                if (err) console.log(err);
+                res.render('pages/shows', 
+                    {
+                        title : 'Public Shows',
+                        page: 'shows',
+                        upcoming: upcomingShows,
+                        previous: previousShows
+                    });
+            });
+        });
+        /*
         res.render('pages/shows', 
             {
                 title : 'Public Shows',
                 page: 'shows'
-            });
+            });*/
     });
     
     app.get('/resources', function (req, res) {
@@ -41,11 +61,15 @@ module.exports = function(app) {
     });
     
     app.get('/sciencecenter', function (req, res) {
-        res.render('pages/sciencecenter', 
-            {
-                title : 'Science Center',
-                page: 'sciencecenter'
-            });
+        Exhibits.find({}).sort('order').exec(function(err, docs) {
+            if (err) console.log(err);
+            res.render('pages/sciencecenter', 
+                {
+                    title : 'Science Center',
+                    page: 'sciencecenter',
+                    exhibits: docs
+                });
+        });
     });
     
     app.get('/contact', function (req, res) {
