@@ -1,0 +1,40 @@
+@import "partials/variables";
+
+#content  {
+    table {
+    	text-align: center;
+    	color: #111;
+    	thead {
+        	cursor: pointer;
+        	th {
+            	text-align: center;
+            	background-color: $calendar_blue;
+            	border: 1px solid #888;
+            	font-size: 1.7rem;
+            	font-family: $muli_fontstack;
+            	color: #111;
+            	* {
+            	    display: inline-block;
+                }
+                p {
+                	margin: 0;
+                	margin-left: -5%;
+                }
+                .fa {
+                	color: #555;
+                	float: left;
+                	font-size: 2.6rem;
+                	width: 3%; 
+                }
+            }
+        }
+        tbody {
+            td:first-child {
+                width: 20%; 
+            }
+            td:last-child {
+                vertical-align: middle;
+            }
+        }
+    }
+}

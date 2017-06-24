@@ -1,0 +1,26 @@
+#content table {
+  text-align: center;
+  color: #111; }
+  #content table thead {
+    cursor: pointer; }
+    #content table thead th {
+      text-align: center;
+      background-color: #D0E0EE;
+      border: 1px solid #888;
+      font-size: 1.7rem;
+      font-family: Muli, Helvetica, sans-serif;
+      color: #111; }
+      #content table thead th * {
+        display: inline-block; }
+      #content table thead th p {
+        margin: 0;
+        margin-left: -5%; }
+      #content table thead th .fa {
+        color: #555;
+        float: left;
+        font-size: 2.6rem;
+        width: 3%; }
+  #content table tbody td:first-child {
+    width: 20%; }
+  #content table tbody td:last-child {
+    vertical-align: middle; }

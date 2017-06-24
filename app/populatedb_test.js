@@ -64,6 +64,7 @@ for(i=0; i < personnelList.length; i++) {
 }
 
 var resourcesList = [
+    { title: "Clear Sky Forecast", author: "cleardarksky.com", fileLink: "http://cleardarksky.com/c/RbsnPntNCkey.html", order: 0, description:"Check out which days will have the best weather for astronomical viewing. Click for our detailed astronomer's weather forecast."},
     { title: "A hands-on method for viewing an eclipse", author: "Exploratorium", fileLink: "http://www.exploratorium.edu/eclipse/video/solar-eclipse-hands-safe-viewing-techniques", order: 1, description:"The Exploratorium Science Center's video about a simple method for hands-on viewing of a solar eclipse-SAFELY!"},
     { title: "Script for Clockwork Skies: 3rd grade", author: "Ron Proctor", fileLink: "resource_files/clockwork_skies_script.pdf", fileType:"pdf", size:"1.04 MB", order: 2},
     { title: "Third grade activity: Sundials", author: "Planetary Society planetary.org", fileLink: "resource_files/Planetary_Report_2012_v32n2_Kids.pdf", fileType:"pdf", size:"1.80 MB", order: 3, description:"This activity allows your students to make a Marsdial like the one used on the Curiosity and Opportunity rovers."},
@@ -101,3 +102,5 @@ for(i=0; i < showsList.length; i++) {
         console.log("New show saved to database");
     });
 }
+
+//mongoose.disconnect();

@@ -1,33 +1,8 @@
 extend ../templates/layout
+block head
+  link(rel='stylesheet', href="/stylesheets/styles_calendar.css")
 block content
   h1 2016-2017 Calendar
-  #cal-nav
-    ul
-      li
-        a(href='#august') August
-      li
-        a(href='#september') September
-      li
-        a(href='#october') October
-      li
-        a(href='#november') November
-      li
-        a(href='#december') December
-      li
-        a(href='#january') January
-    ul
-      li
-        a(href='#february') February
-      li
-        a(href='#march') March
-      li
-        a(href='#april') April
-      li
-        a(href='#may') May
-      li
-        a(href='#june') June
-      li
-        a(href='#june') July
   script.
     $(document).ready(function() {
       // toggle between right and down carets on click

@@ -1,0 +1,27 @@
+@import "partials/variables";
+
+.resource {
+    margin-bottom: 4%;
+    .by {
+        font-size: 1.4rem;
+        margin-top: -1%;
+        margin-left: 2%;
+        .author {
+            font-style: italic;
+        }
+    }
+    .description {
+        font-size: 1.5rem;
+        margin: 1% 0 1.5% 0;
+    }
+    .file {
+        font-size: 1.4rem;
+        img {
+            margin-right: 1%;
+            width: 15px;
+        }
+        .size {
+            padding-left: 2%;
+        }
+    }
+}

@@ -11,12 +11,12 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 db.once("open", function(callback){
     console.log('database connection successful');
+    /*var clearSky = {title: "Clear Sky Forecast", author: "cleardarksky.com", fileLink: "http://cleardarksky.com/c/RbsnPntNCkey.html", order: 0, description:"Check out which days will have the best weather for astronomical viewing. Click for our detailed astronomer's weather forecast."};
+
+    var newResource = new resources(clearSky);
+    newResource.save(function(err, doc) {
+        if (err) console.error(err);
+        console.log("New resource saved to database");
+    });*/
 });
 
-var clearSky = { title: "Clear Sky Forecast", author: "cleardarksky.com", fileLink: "http://cleardarksky.com/c/RbsnPntNCkey.html", order: 0, description:"Check out which days will have the best weather for astronomical viewing. Click for our detailed astronomer's weather forecast."}
-
-var newResource = new resources({clearSky});
-newResource.save(function(err, doc) {
-    if (err) console.error(err);
-    console.log("New resource saved to database");
-});
