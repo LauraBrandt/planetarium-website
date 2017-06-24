@@ -35,70 +35,24 @@
       color: #1D3595;
       font-weight: 800; }
 
-#sidebar {
-  width: 22%;
-  float: right;
-  font-family: Roboto, Helvetica, sans-serif;
-  color: #000;
-  background-color: #7BABD1;
-  position: relative;
-  height: 100%; }
-  #sidebar a {
-    color: #1D3595; }
-
-.large {
-  font-size: 15px;
-  font-family: Lato, Helvetica, sans-serif; }
-
-.center {
-  text-align: center; }
-
-.left {
-  padding: 0 25px 0 20px;
-  margin: 0; }
-
-#sidebar #address {
-  padding-top: 40px;
-  padding-bottom: 5px; }
-
-#sidebar #contact {
-  padding-top: 15px;
-  padding-bottom: 35px;
-  font-size: 14px; }
-
-#sidebar img {
-  margin-bottom: 15px; }
-
-#sidebar #clearsky1 {
-  margin: 30px 0 25px 0;
-  font-size: 14px; }
-
-#sidebar h6 {
-  font-weight: bold;
-  font-size: 13px; }
-
-#sidebar #clearsky2 {
-  margin-top: 5px;
-  margin-bottom: 30px;
-  font-size: 13px; }
-
 #content {
   width: 100%;
   /*78%;*/
   float: left;
-  padding: 2% 6% 5% 6%; }
+  padding: 2% 8% 5% 8%; }
   #content h1 {
     color: #12215e;
     font-family: Lato, Helvetica, sans-serif;
     text-align: center;
     text-transform: uppercase;
-    font-size: 2.8rem; }
+    font-size: 2.8rem;
+    margin-bottom: 4%; }
   #content h2, #content h3 {
     color: #12215e;
     font-weight: bold;
     margin: 3% 0 1.5%;
     font-family: Muli, Helvetica, sans-serif;
-    font-size: 2.5rem; }
+    font-size: 2.3rem; }
   #content h3 {
     font-family: Lato, Helvetica, sans-serif;
     font-size: 1.8rem; }
@@ -143,9 +97,6 @@ body {
   width: 75%;
   margin: 1% auto 1% auto;
   padding: 0; }
-
-.clear {
-  clear: both; }
 
 @media screen and (max-width: 1100px) {
   body {

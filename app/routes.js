@@ -44,12 +44,6 @@ module.exports = function(app, db) {
                     });
             });
         });
-        /*
-        res.render('pages/shows', 
-            {
-                title : 'Public Shows',
-                page: 'shows'
-            });*/
     });
     
     app.get('/resources', function (req, res) {

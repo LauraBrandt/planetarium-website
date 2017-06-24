@@ -10,7 +10,6 @@ $lato_fontstack: Lato, Helvetica, sans-serif;
 
 @import "partials/header";
 @import "partials/navbar";
-@import "partials/sidebar";
 @import "partials/content";
 @import "partials/footer";
 
@@ -27,8 +26,6 @@ body {
 	margin: 1% auto 1% auto;
 	padding: 0;
 }
-
-.clear { clear: both; }
 
 @media screen and (max-width: 1100px) {
 	body {

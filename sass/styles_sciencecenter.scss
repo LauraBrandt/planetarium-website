@@ -1,11 +1,24 @@
 #intro {
-    margin: 20px 0 -10px 0;
+    margin-bottom: 5%;
 }
 
-#all-exhibits { 
+#all-exhibits {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    .exhibit {
+        margin-bottom: 6%;
+    }
     h4 {
         text-align: center;
-        margin-top: 50px;
-        margin-bottom: 20px;
+        margin-bottom: 6%;
+        font-size: 2rem; 
+        font-weight: bold;
+    }
+    img {
+        margin: auto; 
+        max-width: 75%;
     }
 }

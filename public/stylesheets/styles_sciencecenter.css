@@ -1,7 +1,19 @@
 #intro {
-  margin: 20px 0 -10px 0; }
+  margin-bottom: 5%; }
 
-#all-exhibits h4 {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 20px; }
+#all-exhibits {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap; }
+  #all-exhibits .exhibit {
+    margin-bottom: 6%; }
+  #all-exhibits h4 {
+    text-align: center;
+    margin-bottom: 6%;
+    font-size: 2rem;
+    font-weight: bold; }
+  #all-exhibits img {
+    margin: auto;
+    max-width: 75%; }

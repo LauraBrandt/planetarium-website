@@ -6,7 +6,7 @@ block content
 	p#intro Attached to the planetarium is our science center, where we're always introducing new fun, interactive exhibits that the students can play with while learning cool science at the same time! See what our current exhibits are below.
 	.row#all-exhibits
 		each item in exhibits
-			.exhibit.col-sm-6.col-md-4
+			.exhibit.col-sm-12.col-md-6
 				h4= item.title
 				img.img-responsive(src=item.imageLocation)
 				p= item.description

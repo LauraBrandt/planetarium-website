@@ -1,12 +1,12 @@
 var imageSources = [
-    "images/slideshow/frontsign.jpg",
+    "images/slideshow/frontsign.jpg"/*,
     "images/slideshow/insideplanetarium.jpg",
     "images/slideshow/planetwave.jpg",
     "images/slideshow/planetariumpeople.jpg",
     "images/slideshow/sunspots.jpg",
     "images/slideshow/curiosityimage.jpg",
     "images/slideshow/sciencecenter.jpg",
-    "images/slideshow/flume.jpg",
+    "images/slideshow/flume.jpg",*/
     ];
 
 $(document).ready(function() {
@@ -51,8 +51,6 @@ $(document).ready(function() {
                 var left = ((600-new_w)/2.0).toFixed(0) + "px";
                 curr.style.left = left;
             }
-            var height = $('#middlecontainer').height();
-            $('#sidebar').height(height);
         };
     }
     
