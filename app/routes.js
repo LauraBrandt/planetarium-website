@@ -67,18 +67,13 @@ module.exports = function(app, db) {
     });
     
     app.get('/contact', function (req, res) {
+        var mapsApiKey = process.env.MAPSAPIKEY;
+        console.log(mapsApiKey);
         res.render('pages/contact', 
             {
                 title : 'Contact',
-                page: 'contact'
-            });
-    });
-    
-    app.get('/directions', function (req, res) {
-        res.render('pages/directions', 
-            {
-                title : 'Directions',
-                page: 'directions'
+                page: 'contact',
+                apikey: mapsApiKey
             });
     });
     
