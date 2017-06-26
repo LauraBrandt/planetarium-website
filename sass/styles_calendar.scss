@@ -4,12 +4,13 @@
     table {
     	text-align: center;
     	color: #111;
+    	margin: 0;
     	thead {
         	cursor: pointer;
         	th {
             	text-align: center;
             	background-color: $calendar_blue;
-            	border: 1px solid #888;
+            	border: 1px solid #555;
             	font-size: 1.7rem;
             	font-family: $muli_fontstack;
             	color: #111;

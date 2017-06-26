@@ -1,0 +1,50 @@
+@import "partials/variables";
+
+hr {
+    border-top: 1px solid #bbb;
+    margin: 4% 0;
+}
+
+#reservations {
+    h4 {
+        margin: 0 0 1% 5%;
+    }
+}
+
+#directions {
+    .address {
+        font-size: 1.7rem;
+        margin: -1% 0 1% 1%;
+    }
+    .map {
+        width: 90%;
+        display: block;
+        margin: 3% auto 5% auto;
+    } 
+}
+
+#staff {
+    h2 {
+        font-size: 1.7em;
+        margin-top: 5%;
+    }
+    .person {
+    	margin-left: 1%;
+    	.title {
+        	font: bold 1.7rem $roboto_fontstack;
+        	color: #222;
+        	margin: -1.5% 0 0.5% 0;
+    	}
+    	.phone {
+    	    font-size: 1.7rem;
+    	    font-family: $lato_fontstack;
+        }
+    	.email {
+    	    @extend .phone;
+        	color: $blue_text;
+    	}
+        .imgcontainer {
+             padding: 2% 0;
+        }
+    }
+}

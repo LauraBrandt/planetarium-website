@@ -1,12 +1,13 @@
 #content table {
   text-align: center;
-  color: #111; }
+  color: #111;
+  margin: 0; }
   #content table thead {
     cursor: pointer; }
     #content table thead th {
       text-align: center;
       background-color: #D0E0EE;
-      border: 1px solid #888;
+      border: 1px solid #555;
       font-size: 1.7rem;
       font-family: Muli, Helvetica, sans-serif;
       color: #111; }

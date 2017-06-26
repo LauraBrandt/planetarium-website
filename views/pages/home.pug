@@ -1,7 +1,7 @@
 extend ../templates/layout
 block head
   script(src="src/slideshow.js" type='text/javascript')
-
+  link(rel='stylesheet', href="/stylesheets/styles_home.css")
 block content
   h1 Robeson Planetarium and Science Center
   #slideshow-container
@@ -11,11 +11,11 @@ block content
     #pause
       i.fa.fa-pause(aria-hidden="true")
     #dots
-  h2 What's Going On:
   #news
+    h2 What's Going On:
     .story.row
       .col-sm-3
-        img(src="images/news/spaceage.jpg" width="150" height="150" alt="astronaut from the show")
+        img.img-responsive.newsimg(src="images/news/spaceage.jpg" width="150" height="150" alt="astronaut from the show")
       .col-sm-9.text
         h5 Public Show - The Dawn of the Space Age
         p Our next public show is 
@@ -30,32 +30,32 @@ block content
           | Groups of ten or more are encouraged to make reservations in advance.
     .story.row
       .col-sm-3
-        .img(src="images/news/eclipsemap.jpg" width="150" height="150" alt="Map of the path of totality of the eclipse in NC/SC")
+        img.img-responsive.newsimg(src="images/news/eclipsemap.jpg" width="150" height="150" alt="Map of the path of totality of the eclipse in NC/SC")
       .col-sm-9.text
         h5 Total Solar Eclipse
         p The Great American Eclipse is coming 
           strong August 21, 2017
           | .
         p
-          a(href="images/news/eclipsemap_full.jpg") Click here
-          | for the full-size map.
+          a(href="images/news/eclipsemap_full.jpg") Click here 
+          | for the full-size map. 
         p Read more about it 
-          a(href="http://eclipse2017.nasa.gov/") here
+          a(href="http://eclipse2017.nasa.gov/") here 
           | and 
           a(href="news-eclipse.php") here
         p
           a(href="http://www.exploratorium.edu/eclipse/video/solar-eclipse-hands-safe-viewing-techniques") A safe method for viewing that's very hands-on
     .story.row
       .col-sm-3
-        .img(src="images/news/proxima_b.jpg" width="150" height="150" alt="Artist's impression of Proxima Centauri b")
+        img.img-responsive.newsimg(src="images/news/proxima_b.jpg" width="150" height="150" alt="Artist's impression of Proxima Centauri b")
       .col-sm-9.text
         h5 New Planet Found
         p
-          a(href="https://www.youtube.com/watch?v=lysJduOqads") Click here
+          a(href="https://www.youtube.com/watch?v=lysJduOqads") Click here 
           | to watch the announcement of a new planet found orbiting our closest neighbor.
     .story.row
       .col-sm-3
-        .img(src="images/news/365astronomy.jpg" width="150" height="150" alt="Logo of 365 Days of Astronomy")
+        img.img-responsive.newsimg(src="images/news/365astronomy.jpg" width="150" height="150" alt="Logo of 365 Days of Astronomy")
       .col-sm-9.text
         h5 365 Days of Astronomy Podcast
         p
@@ -64,21 +64,6 @@ block content
         p
           a(href="http://cosmoquest.org/x/365daysofastronomy/") Listen to 
           | today's podcast
-  hr
-  #affiliates
-    h3 Robeson Planetarium is proudly affiliated with the following outstanding organizations:
-    p The Southeastern Planetarium Association
-    a(href="http://www.sepadomes.org" style="width:225px")
-      img(src="images/affiliate_logos/sepa.png" width="225" height="200" alt="Southeastern Planetarium Association logo")
-    p The International Planetarium Society
-    a(href="http://www.ips-planetarium.org/" style="width:290px")
-      img(src="images/affiliate_logos/ips.jpg" width="290" height="65" alt="International Planetarium Society logo")
-    p The NC Grassroots Museums Collaborative
-    a(href="http://www.ncscience.org" style="width:444px")
-      img(src="images/affiliate_logos/GrassrootsMuseums.jpg" width="444" height="85" alt="North Carolina Grassroots Museums Collaborative logo")
-    p JPL/NASA Solar System Educators
-    a(href="https://solarsystem.nasa.gov/ssep/" style="width:267px")
-      img(src="images/affiliate_logos/ssep.jpg" width="267" height="61" alt="Solar System Educators Program logo")
-    p MAGMA
-    a(href="http://www.wncrocks.com/magma/magma.html" style="width:199px")
-      img(src="images/affiliate_logos/magmagray.png" width="199" height="199" alt="Mountain Area Gem and Mineral Association logo")
+    script.
+      var dimension = $('.newsimg').width();
+      $('.newsimg').height(dimension);

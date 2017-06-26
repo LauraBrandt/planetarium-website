@@ -7,7 +7,7 @@ html(lang='en')
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
     script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
     script(src="jquery-3.2.1.min.js")
-    link(href="https://fonts.googleapis.com/css?family=Lato|Muli:400,600,800|Roboto|Roboto+Slab" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Lato|Muli:400,600,800|Roboto:400,700|Roboto+Slab" rel="stylesheet")
     link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
     link(rel='stylesheet', href="/stylesheets/main.css")
     block head
@@ -21,6 +21,8 @@ html(lang='en')
           .col-sm-3.col
             a(href='http://www.robeson.k12.nc.us/')
               img.img-responsive#psrclogo(src='/images/psrclogo_resized.png' alt='Public Schools of Robeson County Logo' height='145' width='166')
+            a(href="https://www.facebook.com/Robeson-Planetarium-and-Science-Center-256104448069")
+              img.img-responsive#fb(src="/images/facebook-logo.jpg" alt="Facebook button")
       nav.navbar.navbar-default#navbar
         .container-fluid
           .navbar-header
@@ -45,4 +47,27 @@ html(lang='en')
       #content
           block content
       #footer
-        p &copy; 2017 Robeson Planetarium. All rights reserved.
+        .row
+          #contact.col-sm-3
+            p.name Robeson Planetarium
+            p.address 420 Caton Rd
+            p.address Lumberton, NC
+            p.phone (910) 735-2148
+            p.psrc Robeson Planetarium is a part of the 
+              a(href="http://www.robeson.k12.nc.us/") Public Schools of Robeson County
+          #affiliates.col-sm-9
+            p Robeson Planetarium is proudly affiliated with the following outstanding organizations:
+            a(href="http://www.sepadomes.org")
+              img.one(src="images/affiliate_logos/sepa.png" alt="Southeastern Planetarium Association logo")
+            a(href="http://www.wncrocks.com/magma/magma.html")
+              img.two(src="images/affiliate_logos/magmagray.png" alt="Mountain Area Gem and Mineral Association logo")
+            a(href="http://www.ncscience.org")
+              img.three(src="images/affiliate_logos/GrassrootsMuseums.jpg" alt="North Carolina Grassroots Museums Collaborative logo")
+            a(href="http://www.ips-planetarium.org/")
+              img.four(src="images/affiliate_logos/ips.jpg" alt="International Planetarium Society logo")
+            a(href="https://solarsystem.nasa.gov/ssep/")
+              img.five(src="images/affiliate_logos/ssep.jpg" alt="Solar System Educators Program logo")
+        #copyright
+          p &copy; 2017 Robeson Planetarium. All rights reserved.
+          
+    script(src="src/rem.js" type="text/javascript")

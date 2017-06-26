@@ -1,19 +1,29 @@
+.row {
+  display: flex;
+  /* */ }
+
 .col {
-  display: inline-block;
-  vertical-align: middle;
-  float: none; }
+  position: relative; }
+  .col img {
+    display: block; }
   .col #logo {
     margin: 3% auto 3% auto; }
   .col #psrclogo {
-    margin: auto;
-    position: relative;
-    left: -15%; }
+    position: absolute;
+    top: 10%;
+    left: -10%;
+    margin-left: auto;
+    margin-right: auto; }
+  .col #fb {
+    position: absolute;
+    bottom: 4%;
+    right: 20%; }
 
 @media screen and (max-width: 768px) {
-  .col {
-    display: block; }
-  #psrclogo {
-    max-width: 30%; } }
+  .col-sm-9 {
+    width: 100%; }
+  .col-sm-3 {
+    display: none; } }
 
 #navbar {
   text-align: center;
@@ -65,26 +75,42 @@
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
   margin: 0;
-  padding: 1.3% 2% 0.8% 2%;
-  /*
-	ul {
-		list-style: none;
-		li {
-			display: inline;
-			border-left: 1px solid #fff;
-			padding: 0 1em 0 1.2em;
-			a {
-				color: #fff;
-			}
-		}
-		li.first {
-			border-left: none;
-		}
-	}*/ }
+  padding: 2% 4% 1% 4%; }
   #footer p {
-    padding-top: 0.5em;
-    color: #fff;
-    /*yellow_text;*/ }
+    color: #ccc; }
+  #footer #contact {
+    color: #ddd;
+    margin-top: 2%; }
+    #footer #contact p {
+      font-size: 1.6rem; }
+    #footer #contact p.name {
+      margin-bottom: 1%;
+      font-weight: bold; }
+    #footer #contact p.address {
+      padding: 0;
+      margin: 0; }
+    #footer #contact p.phone {
+      margin-top: 3%; }
+    #footer #contact p.psrc {
+      font-size: 1.4rem;
+      margin-top: 20%; }
+      #footer #contact p.psrc a {
+        color: #7BABD1; }
+  #footer #affiliates img {
+    padding: 1% 2%; }
+  #footer #affiliates .one {
+    max-width: 20%; }
+  #footer #affiliates .two {
+    max-width: 18%; }
+  #footer #affiliates .three {
+    max-width: 40%; }
+  #footer #affiliates .four {
+    max-width: 26%; }
+  #footer #affiliates .five {
+    max-width: 26%; }
+  #footer #copyright p {
+    padding-top: 2%;
+    color: #FFD80E; }
 
 body {
   background: #333 url("../images/spaceswirldoubled.jpg") repeat-y;

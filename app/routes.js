@@ -68,7 +68,6 @@ module.exports = function(app, db) {
     
     app.get('/contact', function (req, res) {
         var mapsApiKey = process.env.MAPSAPIKEY;
-        console.log(mapsApiKey);
         res.render('pages/contact', 
             {
                 title : 'Contact',

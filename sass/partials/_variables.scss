@@ -2,8 +2,27 @@ $dark_blue: #1D3595;
 $light_blue: #7BABD1;
 $blue_text: darken($dark_blue, 13%);
 $calendar_blue: #D0E0EE;
+$yellow_text: #FFD80E;
 
 $robotoslab_fontstack: "Roboto Slab", "Times New Roman", serif;
 $roboto_fontstack: Roboto, Helvetica, sans-serif;
 $muli_fontstack: Muli, Helvetica, sans-serif;
 $lato_fontstack: Lato, Helvetica, sans-serif;
+
+
+@mixin transition($values...) {
+    @each $var in $values {
+        -webkit-transition: #{$var};
+        -moz-transition: #{$var};
+        -o-transition: #{$var};
+        transition: #{$var};
+    }
+}
+
+@mixin user-select {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

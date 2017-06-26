@@ -1,0 +1,33 @@
+hr {
+  border-top: 1px solid #bbb;
+  margin: 4% 0; }
+
+#reservations h4 {
+  margin: 0 0 1% 5%; }
+
+#directions .address {
+  font-size: 1.7rem;
+  margin: -1% 0 1% 1%; }
+
+#directions .map {
+  width: 90%;
+  display: block;
+  margin: 3% auto 5% auto; }
+
+#staff h2 {
+  font-size: 1.7em;
+  margin-top: 5%; }
+
+#staff .person {
+  margin-left: 1%; }
+  #staff .person .title {
+    font: bold 1.7rem Roboto, Helvetica, sans-serif;
+    color: #222;
+    margin: -1.5% 0 0.5% 0; }
+  #staff .person .phone, #staff .person .email {
+    font-size: 1.7rem;
+    font-family: Lato, Helvetica, sans-serif; }
+  #staff .person .email {
+    color: #12215e; }
+  #staff .person .imgcontainer {
+    padding: 2% 0; }
