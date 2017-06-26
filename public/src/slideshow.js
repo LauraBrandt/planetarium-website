@@ -31,30 +31,33 @@ $(document).ready(function() {
     
     function center(i) {
         //console.log("centering slide", i);
-        var containerWidth = $('#slideshow-container').innerWidth();
-        var containerHeight = $('#slideshow-container').innerHeight();
-        //console.log("container dimensions:" , containerWidth, containerHeight);
         var curr = slides[i];
         var imgs = curr.getElementsByTagName("img");
         imgs[0].onload = function() {
-            var w = imgs[0].naturalWidth;
-            var h = imgs[0].naturalHeight;
-            //console.log(w, h, imgs[0].width, imgs[0].height);
-            if (w<containerWidth && h<containerHeight) {  // smaller than the container
-                var left = ((containerWidth-w)/2.0).toFixed(0) + "px";
-                var top = ((containerHeight-h)/2.0).toFixed(0) + "px";
-                curr.style.left = left;
-                curr.style.top = top;
-            } else if ((w/h)>(containerWidth/containerHeight)) {  // larger than container; when resized it's full width but less than full height
-                var new_h = containerWidth*h/w;
-                var top = ((containerHeight-new_h)/2.0).toFixed(0) + "px";
-                curr.style.top = top;
-            } else if ((w/h)<(containerWidth/containerHeight)) {  // larger than container; when resized it's full height but less than full width
-                var new_w = containerHeight*w/h;
-                var left = ((containerWidth-new_w)/2.0).toFixed(0) + "px";
-                curr.style.left = left;
-            }
+            centerImage(imgs[0], curr);
         };
+    }
+    function centerImage(img, slide) {
+        var containerWidth = $('#slideshow-container').innerWidth();
+        var containerHeight = $('#slideshow-container').innerHeight();
+        //console.log("container dimensions:" , containerWidth, containerHeight);
+        var w = img.naturalWidth;
+        var h = img.naturalHeight;
+        //console.log(w, h, img.width, img.height);
+        if (w<containerWidth && h<containerHeight) {  // smaller than the container
+            var left = ((containerWidth-w)/2.0).toFixed(0) + "px";
+            var top = ((containerHeight-h)/2.0).toFixed(0) + "px";
+            slide.style.left = left;
+            slide.style.top = top;
+        } else if ((w/h)>(containerWidth/containerHeight)) {  // larger than container; when resized it's full width but less than full height
+            var new_h = containerWidth*h/w;
+            var top = ((containerHeight-new_h)/2.0).toFixed(0) + "px";
+            slide.style.top = top;
+        } else if ((w/h)<(containerWidth/containerHeight)) {  // larger than container; when resized it's full height but less than full width
+            var new_w = containerHeight*w/h;
+            var left = ((containerWidth-new_w)/2.0).toFixed(0) + "px";
+            slide.style.left = left;
+        }
     }
     
     var currentSlide = 0;
@@ -111,27 +114,13 @@ $(document).ready(function() {
         }
     });
     
-    
-    var addEvent = function(object, type, callback) {
-        if (object == null || typeof(object) == 'undefined') return;
-        if (object.addEventListener) {
-            object.addEventListener(type, callback, false);
-        } else if (object.attachEvent) {
-            object.attachEvent("on" + type, callback);
-        } else {
-            object["on"+type] = callback;
-        }
-    };
-
-    addEvent(window, "resize", function(event) {
-        for (var i=0; i<slides.length; i++) {
-            center(i);
-        } 
-    });/*
     $(window).resize(function(){
         for (var i=0; i<slides.length; i++) {
-            center(i);
-        } 
-    });*/
+            //console.log("centering slide", i);
+            var curr = slides[i];
+            var imgs = curr.getElementsByTagName("img");
+            centerImage(imgs[0], curr);
+        }  
+    });
 
 });
