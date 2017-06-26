@@ -27,14 +27,19 @@
 		p.phone {
 			margin-top: 3%;
 		}
+		.facebook img {
+			margin: 4% auto;
+			width: 13%;
+		}
 		p.psrc {
 			font-size: 1.4rem;
-			margin-top: 20%;
+			margin-top: 10%;
 			a {
 				color: $light_blue;
 			}
 		}
 	}
+
 	#affiliates {
 		img {
 			padding: 1% 2%;
@@ -46,7 +51,6 @@
 		.five { max-width: 26%; }
 	}
 	#copyright p {
-		padding-top: 2%;
 		color: $yellow_text;
 	}
 } 

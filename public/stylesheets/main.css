@@ -91,9 +91,12 @@
       margin: 0; }
     #footer #contact p.phone {
       margin-top: 3%; }
+    #footer #contact .facebook img {
+      margin: 4% auto;
+      width: 13%; }
     #footer #contact p.psrc {
       font-size: 1.4rem;
-      margin-top: 20%; }
+      margin-top: 10%; }
       #footer #contact p.psrc a {
         color: #7BABD1; }
   #footer #affiliates img {
@@ -109,7 +112,6 @@
   #footer #affiliates .five {
     max-width: 26%; }
   #footer #copyright p {
-    padding-top: 2%;
     color: #FFD80E; }
 
 body {
