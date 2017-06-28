@@ -3,9 +3,12 @@
 
 #all-exhibits {
   display: -webkit-box;
-  display: -webkit-flex;
+  display: -moz-box;
   display: -ms-flexbox;
   display: flex;
+  -moz-box-wrap: wrap;
+  -webkit-box-wrap: wrap;
+  -ms-flexbox-wrap: wrap;
   flex-wrap: wrap; }
   #all-exhibits .exhibit {
     margin-bottom: 6%; }

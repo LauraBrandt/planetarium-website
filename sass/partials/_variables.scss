@@ -26,3 +26,17 @@ $lato_fontstack: Lato, Helvetica, sans-serif;
     -ms-user-select: none;
     user-select: none;
 }
+
+@mixin flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@mixin flex-wrap($wrap) {
+    -moz-box-wrap: $wrap;
+    -webkit-box-wrap: $wrap;
+    -ms-flexbox-wrap: $wrap;
+    flex-wrap: $wrap;
+}

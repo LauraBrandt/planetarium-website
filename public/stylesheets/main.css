@@ -1,28 +1,30 @@
-.row {
-  display: flex;
-  /* */ }
+#header .row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex; }
 
-.col {
+#header .col {
   position: relative; }
-  .col img {
+  #header .col img {
     display: block; }
-  .col #logo {
+  #header .col #logo {
     margin: 3% auto 3% auto; }
-  .col #psrclogo {
+  #header .col #psrclogo {
     position: absolute;
     top: 10%;
     left: -10%;
     margin-left: auto;
     margin-right: auto; }
-  .col #fb {
+  #header .col #fb {
     position: absolute;
     bottom: 4%;
     right: 20%; }
 
 @media screen and (max-width: 768px) {
-  .col-sm-9 {
+  #header .col-sm-9 {
     width: 100%; }
-  .col-sm-3 {
+  #header .col-sm-3 {
     display: none; } }
 
 #navbar {
@@ -47,7 +49,6 @@
 
 #content {
   width: 100%;
-  /*78%;*/
   float: left;
   padding: 2% 8% 5% 8%; }
   #content h1 {

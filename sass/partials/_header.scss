@@ -1,34 +1,38 @@
-.row {
-  display: flex;  /* */
-}
-
-.col {
-  position: relative;
-  img {
-    display: block;
+#header {
+  .row {
+    @include flex;
   }
-  #logo {
-    margin: 3% auto 3% auto;
-  }
-  #psrclogo {
-    position: absolute;
-    top: 10%;
-    left: -10%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #fb {
-    position: absolute;
-    bottom: 4%;
-    right: 20%;
+  
+  .col {
+    position: relative;
+    img {
+      display: block;
+    }
+    #logo {
+      margin: 3% auto 3% auto;
+    }
+    #psrclogo {
+      position: absolute;
+      top: 10%;
+      left: -10%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #fb {
+      position: absolute;
+      bottom: 4%;
+      right: 20%;
+    }
   }
 }
 
 @media screen and (max-width: 768px) {
-  .col-sm-9 {
-    width: 100%;
-  }
-  .col-sm-3 {
-    display: none;
+  #header {
+    .col-sm-9 {
+      width: 100%;
+    }
+    .col-sm-3 {
+      display: none;
+    }
   }
 }

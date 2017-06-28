@@ -5,11 +5,8 @@
 }
 
 #all-exhibits {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: wrap;
+    @include flex;
+    @include flex-wrap(wrap);
     .exhibit {
         margin-bottom: 6%;
     }
