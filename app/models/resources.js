@@ -12,4 +12,11 @@ var resourceSchema = Schema({
   order: {type: Number, unique: true}
 });
 
+resourceSchema.pre('save', function(next) {
+  var currentDate = new Date();
+  this.dateCreated = currentDate;
+
+  next();
+});
+
 module.exports = mongoose.model('Resources', resourceSchema);  

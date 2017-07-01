@@ -3,132 +3,21 @@ block head
   link(rel='stylesheet', href="/stylesheets/styles_resources.css")
 block content
   h1 Resources
-  .resource
-    h3 Clear Sky Forecast
-    p.by
-      span by 
-      span.author cleardarksky.com
-    p.description Check out which days will have the best weather for astronomical viewing. Click for our detailed astronomer's weather forecast.
-    p.file
-      a(href="http://cleardarksky.com/c/RbsnPntNCkey.html" target="_blank")
-        | http://cleardarksky.com/c/RbsnPntNCkey.html
-      span.size
-  .resource
-    h3 A hands-on method for viewing an eclipse
-    p.by
-      span by 
-      span.author Exploratorium
-    p.description The Exploratorium Science Center's video about a simple method for hands-on viewing of a solar eclipse-SAFELY!
-    p.file
-      a(href="http://www.exploratorium.edu/eclipse/video/solar-eclipse-hands-safe-viewing-techniques" target="_blank")
-        | http://www.exploratorium.edu/eclipse/video/solar-eclipse-hands-safe-viewing-techniques
-      span.size
-  .resource
-    h3 Script for Clockwork Skies: 3rd grade
-    p.by
-      span by 
-      span.author Ron Proctor
-    p.description 
-    p.file
-      a(href="resource_files/clockwork_skies_script.pdf" target="_blank")
-        img.file-icon(src="images/file-icons/pdf.png")
-        | clockwork skies script.pdf
-      span.size 1.04 MB
-  .resource
-    h3 Third grade activity: Sundials
-    p.by
-      span by 
-      span.author Planetary Society planetary.org
-    p.description This activity allows your students to make a Marsdial like the one used on the Curiosity and Opportunity rovers.
-    p.file
-      a(href="resource_files/Planetary_Report_2012_v32n2_Kids.pdf" target="_blank")
-        img.file-icon(src="images/file-icons/pdf.png")
-        | Planetary_Report_2012_v32n2_Kids.pdf
-      span.size 1.80 MB
-  .resource
-    h3 Determining your cardinal directions using shadows: Third grade
-    p.by
-      span by 
-      span.author Ken Brandt
-    p.description A simple way to use shadows and timing to determine the cardinal directions N, S, E, and W.
-    p.file
-      a(href="resource_files/North_at_Noon_activity_and_podcast.docx" target="_blank")
-        img.file-icon(src="images/file-icons/doc.png")
-        | North_at_Noon_activity_and_podcast.docx
-      span.size 154.68 KB
-  .resource
-    h3 Five Starships: Sixth grade
-    p.by
-      span by 
-      span.author Ken Brandt
-    p.description This is a project-based activity about missions of exploration.
-    p.file
-      a(href="resource_files/Five_Starships.docx" target="_blank")
-        img.file-icon(src="images/file-icons/doc.png")
-        | Five_Starships.docx
-      span.size 66.42 KB
-  .resource
-    h3 sixth grade: Overview Effect
-    p.by
-      span by 
-      span.author Ken and Lorrie Brandt
-    p.description 
-    p.file
-      a(href="resource_files/The_Overview_Effect.docx" target="_blank")
-        img.file-icon(src="images/file-icons/doc.png")
-        | The_Overview_Effect.docx
-      span.size 483.01 KB
-  .resource
-    h3 Comparing Earth, Mars, and Titan: Earth/Environmental Science
-    p.by
-      span by 
-      span.author Ken Brandt
-    p.description Students research and compare the two objects in the solar system most like Earth.
-    p.file
-      a(href="resource_files/earth_mars_titan_9th_grade.doc" target="_blank")
-        img.file-icon(src="images/file-icons/doc.png")
-        | earth_mars_titan_9th_grade.doc
-      span.size 24.50 KB
-  .resource
-    h3 Citizen Science Activity: Find Your Own Exoplanet
-    p.by
-      span by 
-      span.author Ken Brandt
-    p.description Using actual data from the Kepler mission, students can interpret graphs, learn about stellar light curves, and find actual exoplanets going around other stars.
-    p.file
-      a(href="resource_files/Planet_hunters_Citizen_Science_Activity.docx" target="_blank")
-        img.file-icon(src="images/file-icons/doc.png")
-        | Planet_hunters_Citizen_Science_Activity.docx
-      span.size 6.28 MB
-  .resource
-    h3 Kepler Mission Activities: Earth/Environmental Science
-    p.by
-      span by 
-      span.author Ken Brandt
-    p.description 
-    p.file
-      a(href="resource_files/Kepler_Mission_computer_lab_assignment_9.doc" target="_blank")
-        img.file-icon(src="images/file-icons/doc.png")
-        | Kepler_Mission_computer_lab_assignment_9.doc
-      span.size 27.00 KB	
-  .resource
-    h3 Kepler stellar light curve (for use with the planethunter activity)
-    p.by
-      span by 
-      span.author Alan Gould/Kepler.nasa.gov
-    p.description 
-    p.file
-      a(href="resource_files/TransitLightCurve.mov" target="_blank")
-        img.file-icon(src="images/file-icons/video.png")
-        | TransitLightCurve.mov
-      span.size 3.66 MB	
-  .resource
-    h3 Free Star Map
-    p.by
-      span by 
-      span.author www.skymaps.com
-    p.description Want to know what the evening sky will look like? You can print a free star map, courtesy of skymaps.com. Just click on the current month.
-    p.file
-      a(href="http://www.skymaps.com/downloads.html" target="_blank")
-        | http://www.skymaps.com/downloads.html
-      span.size 3.66 MB	
+  p#intro= intro
+  each item in resources
+    .resource
+      h3= item.title
+      p.by
+        span by 
+        span.author= item.author
+      p.description= item.description
+      p.file
+        a(href=item.fileLink target="_blank")
+          if item.fileType
+            img.file-icon(src="images/file-icons/"+item.fileType+".png")
+          - var match = item.fileLink.match(/^resource_files\/(.*)/)
+          if match
+            span= match[1]
+          else
+            span= item.fileLink
+        span.size= item.size

@@ -3,24 +3,45 @@ var news = require('./models/news.js');
 var personnel = require('./models/personnel.js');
 var resources = require('./models/resources.js');
 var shows = require('./models/shows.js');
+var texts = require('./models/text.js');
 var mongoose = require('mongoose');
 var DB_URL = process.env.MONGOLAB_URI || "mongodb://localhost:27017/planetarium";
 mongoose.connect(DB_URL);
 var db = mongoose.connection;
+
+var exhibitCount = 0,
+    totalExhibits = 8,
+    exhibitsDone = false;
+var newsCount = 0,
+    totalNews = 4,
+    newsDone = false;
+var personnelCount = 0,
+    totalPersonnel = 4,
+    personnelDone = false;
+var resourcesCount = 0,
+    totalResources = 12,
+    resourcesDone = false;
+var showsCount = 0,
+    totalShows = 6,
+    showsDone = false;
+var textCount = 0,
+    totalText = 6,
+    textDone = false;
+
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 db.once("open", function(callback){
     console.log('database connection successful');
 });
 var exhibitList = [
-    { title: "Magnets", imageName: "magnet.svg", order: 1},
-    { title: "Building Robots", imageName: "asimo_robot.jpg", order: 2},
-    { title: "Mineral and Rock ID", imageName: "quartz.jpg", order: 3},
-    { title: "Mechanical to Electrical Energy", imageName: "bike_bulb-1.jpg", order: 4},
-    { title: "Colors and Light", imageName: "color.svg", order: 5},
-    { title: "Building Telescopes", imageName: "telescope.jpg", order: 6},
-    { title: "Rocks and Minerals of Mars", imageName: "adirondack.jpg", order: 7},
-    { title: "Planetary Globes: Similarities and Differences", imageName: "globes-1.jpg", order: 8}
+    { title: "Magnets", imageName: "magnet.svg", imageText: "magnetic field", order: 1},
+    { title: "Building Robots", imageName: "asimo_robot.jpg", imageText: "Asimo robot", order: 2},
+    { title: "Mineral and Rock ID", imageName: "quartz.jpg", imageText: "quartz", order: 3},
+    { title: "Mechanical to Electrical Energy", imageName: "bicycle-powered light bulb", imageText: "", order: 4},
+    { title: "Colors and Light", imageName: "color.svg", imageText: "primary colors", order: 5},
+    { title: "Building Telescopes", imageName: "telescope.jpg", imageText: "outdoor telescope", order: 6},
+    { title: "Rocks and Minerals of Mars", imageName: "adirondack.jpg", imageText: "rock in the Adirondacks", order: 7},
+    { title: "Planetary Globes: Similarities and Differences", imageName: "globes-1.jpg", imageText: "balls that look like different planets", order: 8}
 ];
 
 var i;
@@ -30,6 +51,13 @@ for(i=0; i < exhibitList.length; i++) {
     newExhibit.save(function(err, doc) {
         if (err) console.error(err);
         console.log("New exhibit saved to database");
+        exhibitCount += 1;
+        if (exhibitCount === totalExhibits) {
+            exhibitsDone = true;
+        }
+        if (exhibitsDone && newsDone && personnelDone && resourcesDone && showsDone && textDone) {
+            mongoose.disconnect();
+        }
     });
 }
 
@@ -45,14 +73,21 @@ for(i=0; i < newsList.length; i++) {
     newNewsItem.save(function(err, doc) {
         if (err) console.error(err);
         console.log("New news item saved to database");
+        newsCount += 1;
+        if (newsCount === totalNews) {
+            newsDone = true;
+        }
+        if (exhibitsDone && newsDone && personnelDone && resourcesDone && showsDone && textDone) {
+            mongoose.disconnect();
+        }
     });
 }
 
 var personnelList = [
-    { name: "Ken Brandt, M. Ed., NBCT", title: "Director", email: "brandtk.psrc@robeson.k12.nc.us", imageName: "ken.jpg", order: 1},
-    { name: "Joy Ivey", title: "Secretary", email: "joy.ivey@robeson.k12.nc.us", order: 2},
-    { name: "Cleveland Oxendine", title: "Driver", order: 3},
-    { name: "Dr. Elizabeth Younce", title: "Supervisor, Assistant Superintendent of Curriculum & Instruction", phone: "910-735-2370", order: 4}
+    { fullName: "Ken Brandt, M. Ed., NBCT", first: "Ken", last: "Brandt", title: "Director", email: "brandtk.psrc@robeson.k12.nc.us", imageName: "ken.jpg", order: 1},
+    { fullName: "Joy Ivey", title: "Secretary", email: "joy.ivey@robeson.k12.nc.us", order: 2},
+    { fullName: "Cleveland Oxendine", title: "Driver", order: 3},
+    { fullName: "Dr. Elizabeth Younce", first: "Elizabeth", last: "Younce", title: "Supervisor, Assistant Superintendent of Curriculum & Instruction", phone: "910-735-2370", order: 4}
 ];
 
 for(i=0; i < personnelList.length; i++) {
@@ -60,6 +95,13 @@ for(i=0; i < personnelList.length; i++) {
     newPersonnel.save(function(err, doc) {
         if (err) console.error(err);
         console.log("New person saved to database");
+        personnelCount += 1;
+        if (personnelCount === totalPersonnel) {
+            personnelDone = true;
+        }
+        if (exhibitsDone && newsDone && personnelDone && resourcesDone && showsDone && textDone) {
+            mongoose.disconnect();
+        }
     });
 }
 
@@ -83,6 +125,13 @@ for(i=0; i < resourcesList.length; i++) {
     newResource.save(function(err, doc) {
         if (err) console.error(err);
         console.log("New resource saved to database");
+        resourcesCount += 1;
+        if (resourcesCount === totalResources) {
+            resourcesDone = true;
+        }
+        if (exhibitsDone && newsDone && personnelDone && resourcesDone && showsDone && textDone) {
+            mongoose.disconnect();
+        }
     });
 }
 
@@ -100,7 +149,36 @@ for(i=0; i < showsList.length; i++) {
     newShow.save(function(err, doc) {
         if (err) console.error(err);
         console.log("New show saved to database");
+        showsCount += 1;
+        if (showsCount === totalShows) {
+            showsDone = true;
+        }
+        if (exhibitsDone && newsDone && personnelDone && resourcesDone && showsDone && textDone) {
+            mongoose.disconnect();
+        }
     });
 }
 
-//mongoose.disconnect();
+var textList = [
+    { name: "homeIntro"},
+    { name: "scienceCenterIntro", text: "Attached to the planetarium is our science center, where we're always introducing new fun, interactive exhibits that the students can play with while learning cool science at the same time! See what our current exhibits are below."},
+    { name: "showsIntro", text: "The planetarium is open to the public for shows on Saturdays. Shows generally run about 1 hour. Seating capacity is 65 people/program. Groups of ten or more are encouraged to make reservations in advance. For reservations, call 735-2148."},
+    { name: "calendarIntro"},
+    { name: "resourcesIntro"},
+    { name: "directions", text: "From I-95: Take exit 17, turn onto Caton Rd. The planetarium will be about .25 mi to the west. There's a small street with parking in front of it."},
+];
+
+for(i=0; i < textList.length; i++) {
+    var newText = new texts(textList[i]);
+    newText.save(function(err, doc) {
+        if (err) console.error(err);
+        console.log("New text saved to database");
+        textCount += 1;
+        if (textCount === totalText) {
+            textDone = true;
+        }
+        if (exhibitsDone && newsDone && personnelDone && resourcesDone && showsDone && textDone) {
+            mongoose.disconnect();
+        }
+    });
+}

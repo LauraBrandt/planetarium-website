@@ -16,4 +16,14 @@ newsSchema
   return '/images/news/' + this.imageName;
 });
 
+newsSchema.pre('save', function(next) {
+  // get the current date
+  var currentDate = new Date();
+  
+  // change the dateCreated field to current date
+  this.dateCreated = currentDate;
+
+  next();
+});
+
 module.exports = mongoose.model('News', newsSchema);  

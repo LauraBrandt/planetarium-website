@@ -3,10 +3,10 @@ block head
 	link(rel='stylesheet', href="/stylesheets/styles_sciencecenter.css")
 block content
 	h1 Science Center
-	p#intro Attached to the planetarium is our science center, where we're always introducing new fun, interactive exhibits that the students can play with while learning cool science at the same time! See what our current exhibits are below.
+	p#intro= intro
 	.row#all-exhibits
 		each item in exhibits
 			.exhibit.col-sm-12.col-md-6
 				h4= item.title
-				img.img-responsive(src=item.imageLocation)
+				img.img-responsive(src=item.imageLocation alt=item.imageText)
 				p= item.description

@@ -14,27 +14,23 @@ block content
 		p.address 420 Caton Road
 		p.address Lumberton, NC 28360
 		iframe.map(width="600" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key="+apikey+"&q=Robeson+Planetarium,Lumberton+NC&zoom=15" allowfullscreen)
-		p From I-95:
-			br
-			| Take exit 17, turn onto Caton Rd. The planetarium will be about .25 mi to the west. There's a small street with parking in front of it.
+		p= directions
 	hr
 	#staff
 		h2 Our Team
-		.person.row
-			.col-sm-2.imgcontainer
-				img.profilepic.img-responsive(src="images/people/ken.jpg" alt="Ken Brandt" height="120" width="120")
-			.col-sm-10
-				h3.name Ken Brandt, M. Ed., NBCT
-				h4.title Director
-				a.email(href='mailto:"Ken%20Brandt"%20<kenneth.brandt@robeson.k12.nc.us>') brandtk.psrc@robeson.k12.nc.us
-		.person.row
-			h3.name Joy Ivey
-			h4.title Secretary
-			a.email(href='mailto:"Joy%20Ivey"%20<joy.ivey@robeson.k12.nc.us>') joy.ivey@robeson.k12.nc.us
-		.person.row
-			h3.name Cleveland Oxendine
-			h4.title Driver
-		.person.row
-			h3.name Dr. Elizabeth Younce
-			h4.title Supervisor, Assistant Superintendent of Curriculum & Instruction
-			p.phone 910-735-2370
+		each item in personnel
+			if item.imageName
+				.person.row
+					.col-sm-2.imgcontainer
+						img.profilepic.img-responsive(src=item.imageLocation alt=item.first+' '+item.last height="120" width="120")
+					.col-sm-10
+						h3.name= item.fullName
+						h4.title= item.title
+						p.phone= item.phone
+						a.email(href='mailto:"'+item.first+'%20'+item.last+'"%20<'+item.email+'>')= item.email
+			else
+				.person.row
+					h3.name= item.fullName
+					h4.title= item.title
+					p.phone= item.phone
+					a.email(href='mailto:"'+item.first+'%20'+item.last+'"%20<'+item.email+'>')= item.email
