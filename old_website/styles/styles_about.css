@@ -1,0 +1,50 @@
+#topimg {
+	display:block;
+	margin:30px auto 40px auto;
+}
+
+#content hr {
+	margin: 35px 0;
+	border-color: #ccc;
+}
+
+#staff h2 {
+	font-size: 1.7em;
+}
+
+.person {
+	margin: 0;
+	padding: 0;
+	margin-top: 25px;
+}
+
+.person h3 {
+	margin-top: 0;
+}
+
+.person h4 {
+	font: bold 17px Roboto, Helvetica, sans-serif;
+	color: #222;
+	margin: -10px 0 8px 0;
+}
+
+.person p {
+	font-size: 0.97em;
+}
+
+.person a {
+	display:block;
+	margin-top: -5px;
+	font-family: Roboto, Helvetica, sans-serif;
+	font-size: 17px;
+	color:  #1d3595;
+}
+
+.person .phone {
+	font-size: 16px;
+}
+
+.profilepic {
+	display:block;
+	margin:20px auto;
+}

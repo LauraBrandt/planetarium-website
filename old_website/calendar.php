@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<?php $thisPage="calendar"; ?>
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8" />
+	<title>School Calendar | Robeson Planetarium</title>
+    <?php include('included/head.php'); ?>
+    <link type="text/css" rel="stylesheet" href="styles/styles_calendar.css"/>
+    <script src="scripts/calendar.js" type='text/javascript'></script>
+</head>
+
+<body>
+	<div id="container">
+	    <?php include('included/header-nav.php'); ?>
+	
+	    <div id="middlecontainer">
+            <?php include('included/sidebar.php'); ?>
+	
+    		<div id="content">
+    			<h1>2016-2017 Calendar</h1>
+    			
+    			<div id="cal-nav">
+		    		<ul>
+		    			<li><a href="#august">August</a></li>
+		    			<li><a href="#september">September</a></li>
+		    			<li><a href="#october">October</a></li>
+		    			<li><a href="#november">November</a></li>
+		    			<li><a href="#december">December</a></li>
+		    			<li><a href="#january">January</a></li>
+	    			</ul>
+	    			<ul>
+		    			<li><a href="#february">February</a></li>
+		    			<li><a href="#march">March</a></li>
+		    			<li><a href="#april">April</a></li>
+		    			<li><a href="#may">May</a></li>
+		    			<li><a href="#june">June</a></li>
+		    			<li><a href="#june">July</a></li>
+		    		</ul>
+	    		</div>
+
+				<table class="table table-hover table-bordered" id="august">
+					<thead>
+						<tr data-toggle="collapse" data-target="#augcollapse">
+							<th colspan="2">
+								<i class="fa fa-caret-right toggle" aria-hidden="true" title="expand"></i>
+								<i class="fa fa-caret-down toggle" aria-hidden="true" title="collapse" style="display:none"></i>
+								<p>August</p>
+							</th>
+						</tr>
+					</thead>
+					<tbody id="augcollapse" class="collapse">
+						<tr>
+							<td>Monday<br>8/1</td>
+							<td>Stuff</td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>8/2</td>
+							<td>Robeson Elementary - Grades 2 and 3</td>
+	  				    </tr>
+						<tr>
+							<td>Wednesday<br>8/3</td>
+							<td>Southside Ashpole Elementary ‒ 4th Grade</td>
+						</tr>
+						<tr>
+							<td>Thursday<br>8/4</td>
+							<td>Piney Grove Elementary ‒ Over run Day</td>
+						</tr>
+						<tr>
+							<td>Friday<br>8/5</td>
+							<td>West Lumberton Elementary ‒ 4th Grade</td>
+						</tr>
+						<tr>
+							<td>Monday<br>8/8</td>
+							<td></td>
+					    </tr>
+					    <tr>
+							<td>Tuesday<br>8/9</td>
+							<td></td>
+					    </tr>
+					    <tr>
+							<td>Wednesday<br>8/10</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>8/11</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>8/12</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>8/15</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>8/16</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Wednesday<br>8/17</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>8/18</td>
+							<td></td>
+						</tr>
+					    <tr>
+							<td>Friday<br>8/19</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>8/22</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>8/23</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Wednesday<br>8/24</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>8/25</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>8/26</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>8/29</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>8/30</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Wednesday<br>8/31</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<table class="table table-hover table-bordered" id="september">
+					<thead>
+						<tr data-toggle="collapse" data-target="#sepcollapse">
+							<th colspan="2">
+								<i class="fa fa-caret-right toggle" aria-hidden="true" title="expand"></i>
+								<i class="fa fa-caret-down toggle" aria-hidden="true" title="collapse" style="display:none"></i>
+								<p>September</p>
+							</th>
+						</tr>
+					</thead>
+					<tbody id="sepcollapse" class="collapse">
+						<tr>
+							<td>Thursday<br>9/1</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>9/2</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>9/5</td>
+							<td></td>
+					    </tr>
+					    <tr>
+							<td>Tuesday<br>9/6</td>
+							<td></td>
+					    </tr>
+					    <tr>
+							<td>Wednesday<br>9/7</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>9/8</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>9/9</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>9/12</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>9/13</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Wednesday<br>9/14</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>9/15</td>
+							<td></td>
+						</tr>
+					    <tr>
+							<td>Friday<br>9/16</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>9/19</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>9/20</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Wednesday<br>9/21</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>9/22</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>9/23</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>9/26</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>9/27</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Wednesday<br>9/28</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>9/29</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>9/30</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<table class="table table-hover table-bordered" id="october">
+					<thead>
+						<tr data-toggle="collapse" data-target="#octcollapse">
+							<th colspan="2">
+								<i class="fa fa-caret-right toggle" aria-hidden="true" title="expand"></i>
+								<i class="fa fa-caret-down toggle" aria-hidden="true" title="collapse" style="display:none"></i>
+								<p>October</p>
+							</th>
+						</tr>
+					</thead>
+					<tbody id="octcollapse" class="collapse">
+						<tr>
+							<td>Monday<br>10/3</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>10/4</td>
+							<td></td>
+	  				    </tr>
+						<tr>
+							<td>Wednesday<br>10/5</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>10/6</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>10/7</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>10/10</td>
+							<td></td>
+					    </tr>
+					    <tr>
+							<td>Tuesday<br>10/11</td>
+							<td></td>
+					    </tr>
+					    <tr>
+							<td>Wednesday<br>10/12</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>10/13</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>10/14</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>10/17</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>10/18</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Wednesday<br>10/19</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>10/20</td>
+							<td></td>
+						</tr>
+					    <tr>
+							<td>Friday<br>10/21</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>10/24</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>10/25</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Wednesday<br>10/26</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>10/27</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>10/28</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>10/31</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<table class="table table-hover table-bordered" id="november">
+					<thead>
+						<tr data-toggle="collapse" data-target="#novcollapse">
+							<th colspan="2">
+								<i class="fa fa-caret-right toggle" aria-hidden="true" title="expand"></i>
+								<i class="fa fa-caret-down toggle" aria-hidden="true" title="collapse" style="display:none"></i>
+								<p>November</p>
+							</th>
+						</tr>
+					</thead>
+					<tbody id="novcollapse" class="collapse">
+						<tr>
+							<td>Tuesday<br>11/1</td>
+							<td></td>
+	  				    </tr>
+						<tr>
+							<td>Wednesday<br>11/2</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>11/3</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>11/4</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>11/7</td>
+							<td></td>
+					    </tr>
+					    <tr>
+							<td>Tuesday<br>11/8</td>
+							<td></td>
+					    </tr>
+					    <tr>
+							<td>Wednesday<br>11/9</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>11/10</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>11/11</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>11/14</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>11/15</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Wednesday<br>11/16</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>11/17</td>
+							<td></td>
+						</tr>
+					    <tr>
+							<td>Friday<br>11/18</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>11/21</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>11/22</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Wednesday<br>11/23</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>11/24</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>11/25</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>11/28</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>11/29</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Wednesday<br>11/30</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<table class="table table-hover table-bordered" id="december">
+					<thead>
+						<tr data-toggle="collapse" data-target="#deccollapse">
+							<th colspan="2">
+								<i class="fa fa-caret-right toggle" aria-hidden="true" title="expand"></i>
+								<i class="fa fa-caret-down toggle" aria-hidden="true" title="collapse" style="display:none"></i>
+								<p>December</p>
+							</th>
+						</tr>
+					</thead>
+					<tbody id="deccollapse" class="collapse">
+						<tr>
+							<td>Thursday<br>12/1</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>12/2</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>12/5</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>12/6</td>
+							<td></td>
+	  				    </tr>
+						<tr>
+							<td>Wednesday<br>12/7</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>12/8</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>12/9</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>12/12</td>
+							<td></td>
+					    </tr>
+					    <tr>
+							<td>Tuesday<br>12/13</td>
+							<td></td>
+					    </tr>
+					    <tr>
+							<td>Wednesday<br>12/14</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>12/15</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>12/16</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>12/19</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>12/20</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Wednesday<br>12/21</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>12/22</td>
+							<td></td>
+						</tr>
+					    <tr>
+							<td>Friday<br>12/23</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>12/26</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>12/27</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Wednesday<br>12/28</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>12/29</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>12/30</td>
+							<td></td>
+						</tr>					
+					</tbody>
+				</table>
+				
+				<table class="table table-hover table-bordered" id="january">
+					<thead>
+						<tr data-toggle="collapse" data-target="#jancollapse">
+							<th colspan="2">
+								<i class="fa fa-caret-right toggle" aria-hidden="true" title="expand"></i>
+								<i class="fa fa-caret-down toggle" aria-hidden="true" title="collapse" style="display:none"></i>
+								<p>January</p>
+							</th>
+						</tr>
+					</thead>
+					<tbody id="jancollapse" class="collapse">
+						<tr>
+							<td>Monday<br>1/2</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>1/3</td>
+							<td></td>
+	  				    </tr>
+						<tr>
+							<td>Wednesday<br>1/4</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>1/5</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>1/6</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>1/9</td>
+							<td></td>
+					    </tr>
+					    <tr>
+							<td>Tuesday<br>1/10</td>
+							<td></td>
+					    </tr>
+					    <tr>
+							<td>Wednesday<br>1/11</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>1/12</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>1/13</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>1/16</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>1/17</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Wednesday<br>1/18</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>1/19</td>
+							<td></td>
+						</tr>
+					    <tr>
+							<td>Friday<br>1/20</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>1/23</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>1/24</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Wednesday<br>1/25</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>1/26</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>1/27</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>1/30</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>1/31</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<table class="table table-hover table-bordered" id="february">
+					<thead>
+						<tr data-toggle="collapse" data-target="#febcollapse">
+							<th colspan="2">
+								<i class="fa fa-caret-right toggle" aria-hidden="true" title="expand"></i>
+								<i class="fa fa-caret-down toggle" aria-hidden="true" title="collapse" style="display:none"></i>
+								<p>February</p>
+							</th>
+						</tr>
+					</thead>
+					<tbody id="febcollapse" class="collapse">
+						<tr>
+							<td>Wednesday<br>2/1</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>2/2</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>2/3</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>2/6</td>
+							<td></td>
+					    </tr>
+					    <tr>
+							<td>Tuesday<br>2/7</td>
+							<td></td>
+					    </tr>
+					    <tr>
+							<td>Wednesday<br>2/8</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>2/9</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>2/10</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>2/13</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>2/14</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Wednesday<br>2/15</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>2/16</td>
+							<td></td>
+						</tr>
+					    <tr>
+							<td>Friday<br>2/17</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>2/20</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>2/21</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Wednesday<br>2/22</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>2/23</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>2/24</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>2/27</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>2/28</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<table class="table table-hover table-bordered" id="march">
+					<thead>
+						<tr data-toggle="collapse" data-target="#marcollapse">
+							<th colspan="2">
+								<i class="fa fa-caret-right toggle" aria-hidden="true" title="expand"></i>
+								<i class="fa fa-caret-down toggle" aria-hidden="true" title="collapse" style="display:none"></i>
+								<p>March</p>
+							</th>
+						</tr>
+					</thead>
+					<tbody id="marcollapse" class="collapse">
+						<tr>
+							<td>Wednesday<br>3/1</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>3/2</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>3/3</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>3/6</td>
+							<td></td>
+					    </tr>
+					    <tr>
+							<td>Tuesday<br>3/7</td>
+							<td></td>
+					    </tr>
+					    <tr>
+							<td>Wednesday<br>3/8</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>3/9</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>3/10</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>3/13</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>3/14</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Wednesday<br>3/15</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>3/16</td>
+							<td></td>
+						</tr>
+					    <tr>
+							<td>Friday<br>3/17</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>3/20</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>3/21</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Wednesday<br>3/22</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>3/23</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>3/24</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>3/27</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>3/28</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Wednesday<br>3/29</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>3/30</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>3/31</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<table class="table table-hover table-bordered" id="april">
+					<thead>
+						<tr data-toggle="collapse" data-target="#aprcollapse">
+							<th colspan="2">
+								<i class="fa fa-caret-right toggle" aria-hidden="true" title="expand"></i>
+								<i class="fa fa-caret-down toggle" aria-hidden="true" title="collapse" style="display:none"></i>
+								<p>April</p>
+							</th>
+						</tr>
+					</thead>
+					<tbody id="aprcollapse" class="collapse">
+						<tr>
+							<td>Monday<br>4/3</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>4/4</td>
+							<td></td>
+	  				    </tr>
+						<tr>
+							<td>Wednesday<br>4/5</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>4/6</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>4/7</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>4/10</td>
+							<td></td>
+					    </tr>
+					    <tr>
+							<td>Tuesday<br>4/11</td>
+							<td></td>
+					    </tr>
+					    <tr>
+							<td>Wednesday<br>4/12</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>4/13</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>4/14</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>4/17</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>4/18</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Wednesday<br>4/19</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>4/20</td>
+							<td></td>
+						</tr>
+					    <tr>
+							<td>Friday<br>4/21</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>4/24</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>4/25</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Wednesday<br>4/26</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>4/27</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>4/28</td>
+							<td></td>
+						</tr>					
+					</tbody>
+				</table>
+				
+				<table class="table table-hover table-bordered" id="may">
+					<thead>
+						<tr data-toggle="collapse" data-target="#maycollapse">
+							<th colspan="2">
+								<i class="fa fa-caret-right toggle" aria-hidden="true" title="expand"></i>
+								<i class="fa fa-caret-down toggle" aria-hidden="true" title="collapse" style="display:none"></i>
+								<p>May</p>
+							</th>
+						</tr>
+					</thead>
+					<tbody id="maycollapse" class="collapse">
+						<tr>
+							<td>Monday<br>5/1</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>5/2</td>
+							<td></td>
+	  				    </tr>
+						<tr>
+							<td>Wednesday<br>5/3</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>5/4</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>5/5</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>5/8</td>
+							<td></td>
+					    </tr>
+					    <tr>
+							<td>Tuesday<br>5/9</td>
+							<td></td>
+					    </tr>
+					    <tr>
+							<td>Wednesday<br>5/10</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>5/11</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>5/12</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>5/15</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>5/16</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Wednesday<br>5/17</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>5/18</td>
+							<td></td>
+						</tr>
+					    <tr>
+							<td>Friday<br>5/19</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>5/22</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>5/23</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Wednesday<br>5/24</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>5/25</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>5/26</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>5/29</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>5/30</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Wednesday<br>5/31</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<table class="table table-hover table-bordered" id="june">
+					<thead>
+						<tr data-toggle="collapse" data-target="#juncollapse">
+							<th colspan="2">
+								<i class="fa fa-caret-right toggle" aria-hidden="true" title="expand"></i>
+								<i class="fa fa-caret-down toggle" aria-hidden="true" title="collapse" style="display:none"></i>
+								<p>June</p>
+							</th>
+						</tr>
+					</thead>
+					<tbody id="juncollapse" class="collapse">
+						<tr>
+							<td>Thursday<br>6/1</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>6/2</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>6/5</td>
+							<td></td>
+					    </tr>
+					    <tr>
+							<td>Tuesday<br>6/6</td>
+							<td></td>
+					    </tr>
+					    <tr>
+							<td>Wednesday<br>6/7</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>6/8</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>6/9</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>6/12</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>6/13</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Wednesday<br>6/14</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>6/15</td>
+							<td></td>
+						</tr>
+					    <tr>
+							<td>Friday<br>6/16</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>6/19</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>6/20</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Wednesday<br>6/21</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>6/22</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>6/23</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>6/26</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>6/27</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Wednesday<br>6/28</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>6/29</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>6/30</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<table class="table table-hover table-bordered" id="july">
+					<thead>
+						<tr data-toggle="collapse" data-target="#julcollapse">
+							<th colspan="2">
+								<i class="fa fa-caret-right toggle" aria-hidden="true" title="expand"></i>
+								<i class="fa fa-caret-down toggle" aria-hidden="true" title="collapse" style="display:none"></i>
+								<p>July</p>
+							</th>
+						</tr>
+					</thead>
+					<tbody id="julcollapse" class="collapse">
+						<tr>
+							<td>Monday<br>7/3</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>7/4</td>
+							<td></td>
+	  				    </tr>
+						<tr>
+							<td>Wednesday<br>7/5</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>7/6</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>7/7</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>7/10</td>
+							<td></td>
+					    </tr>
+					    <tr>
+							<td>Tuesday<br>7/11</td>
+							<td></td>
+					    </tr>
+					    <tr>
+							<td>Wednesday<br>7/12</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>7/13</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>7/14</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>7/17</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>7/18</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Wednesday<br>7/19</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>7/20</td>
+							<td></td>
+						</tr>
+					    <tr>
+							<td>Friday<br>7/21</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>7/24</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Tuesday<br>7/25</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Wednesday<br>7/26</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Thursday<br>7/27</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Friday<br>7/28</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Monday<br>7/31</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+	   		</div>
+    	
+		</div>
+
+        <?php include("included/footer.php"); ?>
+	
+	</div>
+</body>
+	
+</html>

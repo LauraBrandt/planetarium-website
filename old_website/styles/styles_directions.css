@@ -1,0 +1,9 @@
+iframe {
+    width: 100%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+#directions p {
+	margin-top:20px;
+}
