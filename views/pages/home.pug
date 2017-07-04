@@ -13,57 +13,15 @@ block content
     #dots
   #news
     h2 What's Going On:
-    .story.row
-      .col-sm-3
-        img.img-responsive.newsimg(src="images/news/spaceage.jpg" width="150" height="150" alt="astronaut from the show")
-      .col-sm-9.text
-        h5 Public Show - The Dawn of the Space Age
-        p Our next public show is 
-          strong Saturday, October 15th at 1 pm
-          | .
-        p The show is 
-          i The Dawn of the Space Age
-          | , and will include an update of both the Kepler and Hubble missions. 
-          | This event is a part of the UN’s global outreach effort World Space Week, 
-          | and is the only one of these events in North Carolina.
-        p Admission is free, but seating is limited to sixty-five per program.  
-          | Groups of ten or more are encouraged to make reservations in advance.
-    .story.row
-      .col-sm-3
-        img.img-responsive.newsimg(src="images/news/eclipsemap.jpg" width="150" height="150" alt="Map of the path of totality of the eclipse in NC/SC")
-      .col-sm-9.text
-        h5 Total Solar Eclipse
-        p The Great American Eclipse is coming 
-          strong August 21, 2017
-          | .
-        p
-          a(href="images/news/eclipsemap_full.jpg") Click here 
-          | for the full-size map. 
-        p Read more about it 
-          a(href="http://eclipse2017.nasa.gov/") here 
-          | and 
-          a(href="news-eclipse.php") here
-        p
-          a(href="http://www.exploratorium.edu/eclipse/video/solar-eclipse-hands-safe-viewing-techniques") A safe method for viewing that's very hands-on
-    .story.row
-      .col-sm-3
-        img.img-responsive.newsimg(src="images/news/proxima_b.jpg" width="150" height="150" alt="Artist's impression of Proxima Centauri b")
-      .col-sm-9.text
-        h5 New Planet Found
-        p
-          a(href="https://www.youtube.com/watch?v=lysJduOqads") Click here 
-          | to watch the announcement of a new planet found orbiting our closest neighbor.
-    .story.row
-      .col-sm-3
-        img.img-responsive.newsimg(src="images/news/365astronomy.jpg" width="150" height="150" alt="Logo of 365 Days of Astronomy")
-      .col-sm-9.text
-        h5 365 Days of Astronomy Podcast
-        p
-          a(href="http://cosmoquest.org/x/365daysofastronomy/2009/03/16/march-16th/") Listen to 
-          | Ken Brandt's podcast for the International Year of Astronomy: How to find the directions using the Sun and shadows
-        p
-          a(href="http://cosmoquest.org/x/365daysofastronomy/") Listen to 
-          | today's podcast
+    each item in newsItems
+      .story.row
+        .col-sm-3
+          img.img-responsive.newsimg(src=item.imageLocation width="150" height="150" alt=item.imageText)
+        .col-sm-9.text
+          h5= item.title 
+          if item.description
+            each par in item.description
+              p!= par
     script.
       var dimension = $('.newsimg').width();
       $('.newsimg').height(dimension);

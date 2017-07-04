@@ -8,19 +8,27 @@ var Text = require('./models/text.js');
 module.exports = function(app, db) {
     
     app.get('/', function (req, res) {
-        res.render('pages/home', 
+        News.find({}).sort('order').exec(function(err, docs) {
+            if (err) console.log(err);
+            res.render('pages/home', 
             {
                 title : 'Home',
-                page: 'home'
+                page: 'home',
+                newsItems: docs
             });
+        });
     });
     
     app.get('/home', function (req, res) {
-        res.render('pages/home', 
+        News.find({}).sort('order').exec(function(err, docs) {
+            if (err) console.log(err);
+            res.render('pages/home', 
             {
                 title : 'Home',
-                page: 'home'
+                page: 'home',
+                newsItems: docs
             });
+        });
     });
     
     app.get('/schoolcalendar', function (req, res) {

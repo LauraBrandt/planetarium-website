@@ -62,10 +62,32 @@ for(i=0; i < exhibitList.length; i++) {
 }
 
 var newsList = [
-    { title: "Public Show - The Dawn of the Space Age", imageName: "images/news/spaceage.jpg", imageText: "astronaut from the show", order: 1},
-    { title: "Total Solar Eclipse", imageName: "eclipsemap.jpg", imageText: "Map of the path of totality of the eclipse in NC/SC", order: 2},
-    { title: "New Planet Found", imageName: "proxima_b.jpg", imageText: "Artist's impression of Proxima Centauri b", order: 3},
-    { title: "365 Days of Astronomy Podcast", imageName: "365astronomy.jpg", imageText: "Logo of 365 Days of Astronomy", order: 4}
+    { title: "Public Show - The Dawn of the Space Age", imageName: "spaceage.jpg", imageText: "astronaut from the show", order: 1,
+        description: [
+            "Our next public show is <strong>Saturday, October 15th at 1 pm</strong>.",
+            "The show is <em>The Dawn of the Space Age</em>, and will include an update of both the Kepler and Hubble missions. This event is a part of the UN’s global outreach effort World Space Week, and is the only one of these events in North Carolina.",
+            "Admission is free, but seating is limited to sixty-five per program. Groups of ten or more are encouraged to make reservations in advance."
+            ]
+    },
+    { title: "Total Solar Eclipse", imageName: "eclipsemap.jpg", imageText: "Map of the path of totality of the eclipse in NC/SC", order: 2,
+        description: [
+            "The Great American Eclipse is coming <strong>August 21, 2017</strong>.",
+            "<a href='images/news/eclipsemap_full.jpg'>Click here</a> for the full-size map.",
+            "Read more about it <a href='http://eclipse2017.nasa.gov/'>here</a> and <a href='posts/eclipse.html'>here</a>.",
+            "<a href='http://www.exploratorium.edu/eclipse/video/solar-eclipse-hands-safe-viewing-techniques'>A safe method for viewing that's very hands-on</a>"
+            ]
+    },
+    { title: "New Planet Found", imageName: "proxima_b.jpg", imageText: "Artist's impression of Proxima Centauri b", order: 3,
+        description: [
+            "<a href='https://www.youtube.com/watch?v=lysJduOqads'>Click here</a> to watch the announcement of a new planet found orbiting our closest neighbor."
+            ]
+    },
+    { title: "365 Days of Astronomy Podcast", imageName: "365astronomy.jpg", imageText: "Logo of 365 Days of Astronomy", order: 4,
+        description: [
+            "<a href='http://cosmoquest.org/x/365daysofastronomy/2009/03/16/march-16th/'>Listen to</a> Ken Brandt's podcast for the International Year of Astronomy: How to find the directions using the Sun and shadows.",
+            "<a href='http://cosmoquest.org/x/365daysofastronomy/'>Listen to</a> today's podcast"
+            ]
+    }
 ];
 
 for(i=0; i < newsList.length; i++) {
@@ -136,12 +158,33 @@ for(i=0; i < resourcesList.length; i++) {
 }
 
 var showsList = [
-    { title: "Dawn of the Space Age", status: "upcoming", description: "Note: this program is suitable for those 8+ years old. The program shows the beginning of our space exploration, and we finish with the future of space exploration.", date: "Saturday, October 15th at 1 pm.", order: 1},
-    { title: "Natural Selection", status: "previous", description: "We celebrate two great science thinkers born in February - Galileo and Darwin.", order: 2},
-    { title: "Cool Stuff that Blows Up!", status: "previous", description: "Exactly what it sounds like.", order: 3},
-    { title: "Transit of Venus", status: "previous", description: "How to view it, what you'll see, and how we use transits to prove the existence of other planets like Earth!", order: 4},
+    { title: "Dawn of the Space Age", status: "upcoming", date: "Saturday, October 15th at 1 pm.", order: 1,
+        description: [
+            "<em>Note: this program is suitable for those 8+ years old.</em>",
+            "The program shows the beginning of our space exploration, and we finish with the future of space exploration."
+            ]
+    },
+    { title: "Natural Selection", status: "previous", order: 2,
+        description: [
+            "We celebrate two great science thinkers born in February - Galileo and Darwin."
+            ]
+    },
+    { title: "Cool Stuff that Blows Up!", status: "previous", order: 3,
+        description: [
+            "Exactly what it sounds like."
+            ]
+    },
+    { title: "Transit of Venus", status: "previous", order: 4,
+         description: [
+            "How to view it, what you'll see, and how we use transits to prove the existence of other planets like Earth!"
+            ]
+    },
     { title: "Robots In Space!", status: "previous", order: 5},
-    { title: "Hubble - 20 Great Years!", status: "previous", description: "The Hubble Space Telescope has changed how we see the universe and ourselves. Find out what we've learned and what we've yet to learn.  We will also take a 'sneak peak' at some brand new planetarium technology-the mirrordome projection system!  Come see yourself surrounded by space scenery!", order: 6}
+    { title: "Hubble - 20 Great Years!", status: "previous", order: 6,
+        description: [
+            "The Hubble Space Telescope has changed how we see the universe and ourselves. Find out what we've learned and what we've yet to learn.  We will also take a 'sneak peak' at some brand new planetarium technology-the mirrordome projection system!  Come see yourself surrounded by space scenery!"
+            ]
+    }
 ];
 
 for(i=0; i < showsList.length; i++) {

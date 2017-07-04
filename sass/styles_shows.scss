@@ -12,21 +12,15 @@
     	list-style: none;
     	margin-bottom: 6%;
     	padding-left: 3%;
-    	li p {
-            margin-top: 1.5%;
-            margin-bottom: 4%;
+    	li {
+            margin-bottom: 5%;
+            h4 {
+                margin-bottom: 1.5%;
+            }
         }
-    }
-    .aside {
-    	font-style:italic;
-    	font-size:0.97em;
-        margin-bottom: -0.5%;
-        margin-top: -0.5%;
     }
     .date {
     	font-weight:bold;
-    	font-size: 1.1em;
-    	padding-left:3%;
-    	margin-top:-2.5%;
+    	padding-left:2%;
     }
 }

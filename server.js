@@ -1,7 +1,7 @@
 /* Dependencies */
 var express = require('express'),
     sassMiddleware = require('node-sass-middleware'),
-    path    = require('path'),
+    path = require('path'),
     logger = require('morgan'),
     mongoose = require('mongoose'),
     favicon = require('serve-favicon'),

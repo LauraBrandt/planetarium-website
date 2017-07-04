@@ -3,7 +3,7 @@ var mongoose = require('mongoose'),
     
 var exhibitSchema = Schema({  
   title: {type: String, required: true},
-  description: String,
+  description: [String],
   imageName: String,
   imageText: String,
   order: {type: Number, unique: true}

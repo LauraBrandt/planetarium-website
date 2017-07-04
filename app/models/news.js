@@ -3,7 +3,7 @@ var mongoose = require('mongoose'),
     
 var newsSchema = Schema({  
   title: {type: String, required: true},
-  description: String,
+  description: [String],
   imageName: String,
   imageText: String,
   dateCreated: Date,

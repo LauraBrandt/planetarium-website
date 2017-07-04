@@ -9,4 +9,6 @@ block content
 			.exhibit.col-sm-12.col-md-6
 				h4= item.title
 				img.img-responsive(src=item.imageLocation alt=item.imageText)
-				p= item.description
+				if item.description
+					each par in item.description
+						p!= par

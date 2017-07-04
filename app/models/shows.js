@@ -3,7 +3,7 @@ var mongoose = require('mongoose'),
     
 var showSchema = Schema({  
   title: {type: String, required: true},
-  description: String,
+  description: [String],
   date: String,
   status: { type: String, enum : ['upcoming','previous'] },
   order: Number

@@ -10,17 +10,15 @@ block content
 		each upcomingShow in upcoming
 			li
 				h4= upcomingShow.title
-				p= upcomingShow.description
-				p.date Date and time: #{upcomingShow.date}
-	//		
-		li
-			h4 Dawn of the Space Age
-			p.aside Note: this program is suitable for those 8+ years old.
-			p The program shows the beginning of our space exploration, and we finish with the future of space exploration.
-			p.date Date and time: Saturday, October 15th at 1 pm.
+				if upcomingShow.description
+					each par in upcomingShow.description
+						p!= par
+				p.date.well.well-sm Date and time: #{upcomingShow.date}
 	h2 Previous shows:
 	ul
 		each previousShow in previous
 			li
 				h4= previousShow.title
-				p= previousShow.description
+				if previousShow.description
+					each par in previousShow.description
+						p!= par
