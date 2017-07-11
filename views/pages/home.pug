@@ -1,5 +1,7 @@
 extend ../templates/layout
 block head
+  script.
+    var imageSources = "#{imgArray}".split(",");
   script(src="src/slideshow.js" type='text/javascript')
   link(rel='stylesheet', href="/stylesheets/styles_home.css")
 block content

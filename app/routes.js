@@ -1,3 +1,5 @@
+var fs = require('fs');
+
 var Exhibits = require('./models/exhibits.js');
 var News = require('./models/news.js');
 var Personnel = require('./models/personnel.js');
@@ -7,30 +9,25 @@ var Text = require('./models/text.js');
 
 module.exports = function(app, db) {
     
-    app.get('/', function (req, res) {
-        News.find({}).sort('order').exec(function(err, docs) {
-            if (err) console.log(err);
-            res.render('pages/home', 
-            {
-                title : 'Home',
-                page: 'home',
-                newsItems: docs
+    app.get(['/', '/home'], function (req, res) {
+        fs.readdir(process.cwd() + '/public/images/slideshow', function(err, filenames) {
+            if (err) console.error(err);
+            var imgPaths = filenames.map(function(imgName) {
+                return "images/slideshow/" + imgName;
+            });
+            News.find({}).sort('order').exec(function(err, docs) {
+                if (err) console.log(err);
+                res.render('pages/home', 
+                {
+                    title : 'Home',
+                    page: 'home',
+                    newsItems: docs, 
+                    imgArray: imgPaths
+                });
             });
         });
     });
-    
-    app.get('/home', function (req, res) {
-        News.find({}).sort('order').exec(function(err, docs) {
-            if (err) console.log(err);
-            res.render('pages/home', 
-            {
-                title : 'Home',
-                page: 'home',
-                newsItems: docs
-            });
-        });
-    });
-    
+
     app.get('/schoolcalendar', function (req, res) {
         Text.findOne({name: "calendarIntro"}, function(err, textResult) {
             if (err) console.log(err);

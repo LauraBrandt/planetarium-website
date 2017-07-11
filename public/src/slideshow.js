@@ -1,16 +1,6 @@
-var imageSources = [
-    "images/slideshow/frontsign.jpg",
-    "images/slideshow/insideplanetarium.jpg",
-    "images/slideshow/planetwave.jpg",
-    "images/slideshow/planetariumpeople.jpg",
-    "images/slideshow/sunspots.jpg",
-    "images/slideshow/curiosityimage.jpg",
-    "images/slideshow/sciencecenter.jpg",
-    "images/slideshow/flume.jpg",
-    ];
-
 $(document).ready(function() {
-    // populate slides with images from array
+    // Populate slides with images from array
+    // imageSources is defined in home.pug
     var imgHTML = "";
     for(var j=0; j<imageSources.length; j++) {
         imgHTML += "<div class='slide'><img src='" + imageSources[j] + "'></div>";
