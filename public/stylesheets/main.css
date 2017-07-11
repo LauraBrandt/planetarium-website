@@ -2,6 +2,7 @@
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex; }
 
 #header .col {
@@ -34,9 +35,18 @@
   margin-bottom: 0;
   min-height: 2em; }
   #navbar ul {
-    width: 100%; }
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between; }
     #navbar ul li a {
-      padding: 0.7em 1.8em;
+      /*padding: 0.7em 1.8em;*/
       color: #eee;
       font-weight: 600; }
     #navbar ul li:hover a:hover {

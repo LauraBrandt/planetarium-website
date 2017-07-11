@@ -6,9 +6,11 @@
 	min-height: 2em;
 	ul {
 		width: 100%;
+		@include flex;
+		@include justify-content(space-between);
 		li {
 			a {
-				padding: 0.7em 1.8em;
+				/*padding: 0.7em 1.8em;*/
 				color: #eee;
 				font-weight: 600;
 			}

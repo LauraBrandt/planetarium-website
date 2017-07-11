@@ -31,6 +31,7 @@ $lato_fontstack: Lato, Helvetica, sans-serif;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
 }
 
@@ -39,4 +40,11 @@ $lato_fontstack: Lato, Helvetica, sans-serif;
     -webkit-box-wrap: $wrap;
     -ms-flexbox-wrap: $wrap;
     flex-wrap: $wrap;
+}
+
+@mixin justify-content($justify) {
+    -ms-justify-content: $justify;
+    -webkit-justify-content: $justify;
+    -moz-justify-content: $justify;
+    justify-content: $justify;
 }
