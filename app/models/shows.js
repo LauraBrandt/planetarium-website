@@ -4,7 +4,14 @@ var mongoose = require('mongoose'),
 var showSchema = Schema({  
   title: {type: String, required: true},
   description: [String],
-  date: String,
+  dates: [{
+    weekday: String,
+    month: String,
+    day: Number,
+    year: String,
+    time: String,
+    ampm: String
+  }],
   status: { type: String, enum : ['upcoming','previous'] },
   order: Number
 });

@@ -158,7 +158,15 @@ for(i=0; i < resourcesList.length; i++) {
 }
 
 var showsList = [
-    { title: "Dawn of the Space Age", status: "upcoming", date: "Saturday, October 15th at 1 pm.", order: 1,
+    { title: "Dawn of the Space Age", status: "upcoming", order: 1, 
+        dates: [{
+            weekday: "Saturday", 
+            month: "October",
+            day: 15,
+            year: 2017,
+            time: "1:00",
+            ampm: "pm"
+        }],/*"Saturday, October 15th at 1 pm."*/ 
         description: [
             "<em>Note: this program is suitable for those 8+ years old.</em>",
             "The program shows the beginning of our space exploration, and we finish with the future of space exploration."

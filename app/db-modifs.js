@@ -18,9 +18,9 @@ var TOTAL = 1;  // Make sure to change
 db.once("open", function(callback){
     console.log('database connection successful');
 
-    texts.findOne({name: 'showsIntro'}, function(err, doc) {
+    shows.findOne({order: 1}, function(err, doc) {
         if (err) console.error(err)
-        doc.emphasized = false;
+        doc.dates.pop();
         doc.save(function(err) {
             if (err) console.error(err)
             onSave()

@@ -47,6 +47,7 @@ module.exports = function(app, db) {
     app.get('/publicshows', function (req, res) {
         Shows.find({status: 'upcoming'}).sort('order').exec(function(err, upcomingShows) {
             if (err) console.error(err);
+            console.log("dates:", upcomingShows[0].dates);
             Shows.find({status: 'previous'}).sort('order').exec(function(err, previousShows) {
                 if (err) console.error(err);
                 Text.findOne({name: "showsIntro"}, function(err, textResult) { 

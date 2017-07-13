@@ -15,4 +15,10 @@
 
 #content .date {
   font-weight: bold;
-  padding-left: 2%; }
+  margin-top: 2%; }
+  #content .date p {
+    margin: 0;
+    padding-left: 2%; }
+  #content .date p.when {
+    padding-left: 0;
+    padding-bottom: 0.5%; }

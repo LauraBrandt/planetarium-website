@@ -19,7 +19,11 @@ block content
 				if upcomingShow.description
 					each par in upcomingShow.description
 						p!= par
-				p.date.well.well-sm Date and time: #{upcomingShow.date}
+				.date.well.well-sm 
+					p.when When: 
+					each date in upcomingShow.dates
+						p - #{date.weekday}, #{date.month} #{date.day} at  #{date.time} #{date.ampm}
+
 	h2 Previous shows:
 	ul
 		each previousShow in previous
