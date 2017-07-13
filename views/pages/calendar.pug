@@ -3,7 +3,14 @@ block head
   link(rel='stylesheet', href="/stylesheets/styles_calendar.css")
 block content
   h1 2017-2018 Calendar
-  p#intro= intro
+  p#intro= intro.text
+  script.
+    var emph = !{JSON.stringify(intro.emphasized)}
+    if (emph) {
+      $('#intro').addClass('emphasized');
+    } else {
+      $('#intro').removeClass('emphasized');
+    }
   script.
     $(document).ready(function() {
       // toggle between right and down carets on click

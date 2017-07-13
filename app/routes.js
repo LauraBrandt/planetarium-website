@@ -15,14 +15,18 @@ module.exports = function(app, db) {
             var imgPaths = filenames.map(function(imgName) {
                 return "images/slideshow/" + imgName;
             });
-            News.find({}).sort('order').exec(function(err, docs) {
-                if (err) console.log(err);
-                res.render('pages/home', 
-                {
-                    title : 'Home',
-                    page: 'home',
-                    newsItems: docs, 
-                    imgArray: imgPaths
+            Text.findOne({name: "homeIntro"}, function(err, textResult) {
+                if (err) console.error(err);
+                News.find({}).sort('order').exec(function(err, docs) {
+                    if (err) console.error(err);
+                    res.render('pages/home', 
+                    {
+                        title : 'Home',
+                        page: 'home',
+                        newsItems: docs, 
+                        imgArray: imgPaths,
+                        intro: textResult
+                    });
                 });
             });
         });
@@ -30,28 +34,28 @@ module.exports = function(app, db) {
 
     app.get('/schoolcalendar', function (req, res) {
         Text.findOne({name: "calendarIntro"}, function(err, textResult) {
-            if (err) console.log(err);
+            if (err) console.error(err);
             res.render('pages/calendar', 
                 {
                     title : 'School Calendar',
                     page: 'calendar',
-                    intro: textResult.text
+                    intro: textResult
                 });
         });
     });
     
     app.get('/publicshows', function (req, res) {
         Shows.find({status: 'upcoming'}).sort('order').exec(function(err, upcomingShows) {
-            if (err) console.log(err);
+            if (err) console.error(err);
             Shows.find({status: 'previous'}).sort('order').exec(function(err, previousShows) {
-                if (err) console.log(err);
+                if (err) console.error(err);
                 Text.findOne({name: "showsIntro"}, function(err, textResult) { 
-                    if (err) console.log(err);
+                    if (err) console.error(err);
                     res.render('pages/shows', 
                     {
                         title : 'Public Shows',
                         page: 'shows',
-                        intro: textResult.text,
+                        intro: textResult,
                         upcoming: upcomingShows,
                         previous: previousShows
                     });
@@ -62,15 +66,15 @@ module.exports = function(app, db) {
     
     app.get('/resources', function (req, res) {
         Resources.find({}).sort('order').exec(function(err, docs) {
-            if (err) console.log(err);
+            if (err) console.error(err);
             Text.findOne({name: "resourcesIntro"}, function(err, textResult) {
-                if (err) console.log(err);
+                if (err) console.error(err);
                 res.render('pages/resources', 
                 {
                     title : 'Resources',
                     page: 'resources',
                     resources: docs,
-                    intro: textResult.text
+                    intro: textResult
                 });
             });
         });
@@ -78,15 +82,15 @@ module.exports = function(app, db) {
     
     app.get('/sciencecenter', function (req, res) {
         Exhibits.find({}).sort('order').exec(function(err, docs) {
-            if (err) console.log(err);
+            if (err) console.error(err);
             Text.findOne({name: "scienceCenterIntro"}, function(err, textResult) {
-                if (err) console.log(err);
+                if (err) console.error(err);
                 res.render('pages/sciencecenter', 
                 {
                     title : 'Science Center',
                     page: 'sciencecenter',
                     exhibits: docs,
-                    intro: textResult.text
+                    intro: textResult
                 });
             });
         });
@@ -95,15 +99,15 @@ module.exports = function(app, db) {
     app.get('/contact', function (req, res) {
         var mapsApiKey = process.env.MAPSAPIKEY;
         Personnel.find({}).sort('order').exec(function(err, docs) {
-            if (err) console.log(err);
+            if (err) console.error(err);
             Text.findOne({name: "directions"}, function(err, textResult) {
-                if (err) console.log(err);
+                if (err) console.error(err);
                 res.render('pages/contact', 
                     {
                         title : 'Contact',
                         page: 'contact',
                         apikey: mapsApiKey,
-                        directions: textResult.text,
+                        directions: textResult,
                         personnel: docs
                     });
             });

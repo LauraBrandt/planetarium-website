@@ -3,7 +3,8 @@ var mongoose = require('mongoose'),
     
 var textSchema = Schema({  
   name: {type: String, required: true},
-  text: String
+  text: String,
+  emphasized: {type: Boolean, default: false}
 });
 
 module.exports = mongoose.model('Text', textSchema);  

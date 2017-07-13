@@ -6,6 +6,14 @@ block head
   link(rel='stylesheet', href="/stylesheets/styles_home.css")
 block content
   h1 Robeson Planetarium and Science Center
+  p#intro= intro.text
+  script.
+    var emph = !{JSON.stringify(intro.emphasized)}
+    if (emph) {
+      $('#intro').addClass('emphasized');
+    } else {
+      $('#intro').removeClass('emphasized');
+    }
   #slideshow-container
     #slides
     #prev &#10094;

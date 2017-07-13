@@ -3,7 +3,14 @@ block head
 	link(rel='stylesheet', href="/stylesheets/styles_sciencecenter.css")
 block content
 	h1 Science Center
-	p#intro= intro
+	p#intro= intro.text
+	script.
+		var emph = !{JSON.stringify(intro.emphasized)}
+		if (emph) {
+			$('#intro').addClass('emphasized');
+		} else {
+			$('#intro').removeClass('emphasized');
+		}
 	.row#all-exhibits
 		each item in exhibits
 			.exhibit.col-sm-12.col-md-6

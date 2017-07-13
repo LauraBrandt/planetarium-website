@@ -3,7 +3,14 @@ block head
   link(rel='stylesheet', href="/stylesheets/styles_resources.css")
 block content
   h1 Resources
-  p#intro= intro
+  p#intro= intro.text
+  script.
+    var emph = !{JSON.stringify(intro.emphasized)}
+    if (emph) {
+      $('#intro').addClass('emphasized');
+    } else {
+      $('#intro').removeClass('emphasized');
+    }
   each item in resources
     .resource
       h3= item.title

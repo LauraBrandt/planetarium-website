@@ -3,8 +3,14 @@ block head
 	link(rel='stylesheet', href="/stylesheets/styles_shows.css")
 block content
 	h1 Public Shows
-	p#intro= intro
-	// The planetarium is open to the public for shows on Saturdays. Shows generally run about 1 hour. Seating capacity is 65 people/program.  Groups of ten or more are encouraged to make reservations in advance. For reservations, call 735-2148.
+	p#intro= intro.text
+	script.
+		var emph = !{JSON.stringify(intro.emphasized)}
+		if (emph) {
+			$('#intro').addClass('emphasized');
+		} else {
+			$('#intro').removeClass('emphasized');
+		}
 	h2 Upcoming shows:
 	ul
 		each upcomingShow in upcoming
