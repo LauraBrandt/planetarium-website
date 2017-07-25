@@ -6,6 +6,7 @@ var Personnel = require('./models/personnel.js');
 var Resources = require('./models/resources.js');
 var Shows = require('./models/shows.js');
 var Text = require('./models/text.js');
+var Posts = require('./models/posts.js');
 
 module.exports = function(app, db) {
     
@@ -112,6 +113,20 @@ module.exports = function(app, db) {
                         personnel: docs
                     });
             });
+        });
+    });
+    
+    app.get('/posts/:postName', function (req, res) {
+        //TODO: if post name doesn't exist
+        var postName = req.params.postName;
+        Posts.findOne({name: postName}, function(err, doc) {
+            if (err) console.error(err);
+            res.render('pages/post', 
+                {
+                    title : postName,
+                    page: postName,
+                    post: doc
+                });
         });
     });
     

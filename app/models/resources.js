@@ -2,7 +2,7 @@ var mongoose = require('mongoose'),
     Schema = mongoose.Schema;  
     
 var resourceSchema = Schema({  
-  title: {type: String, required: true},
+  title: {type: String, required: true, unique: true},
   author: String,
   description: String,
   fileLink: {type: String, required: true},

@@ -1,0 +1,10 @@
+extend ../templates/layout
+block head
+  link(rel='stylesheet', href="/stylesheets/styles_posts.css")
+block content
+  if post.header
+    h1= post.header
+  if post.body
+    each par in post.body
+      p!= par
+  

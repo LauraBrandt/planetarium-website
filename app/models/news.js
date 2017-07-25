@@ -2,7 +2,7 @@ var mongoose = require('mongoose'),
     Schema = mongoose.Schema;  
     
 var newsSchema = Schema({  
-  title: {type: String, required: true},
+  title: {type: String, required: true, unique: true},
   description: [String],
   imageName: String,
   imageText: String,
